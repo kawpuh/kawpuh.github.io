@@ -10,8 +10,8 @@ return (new cljs.core.LazySeq(null,(function (){
 var temp__5804__auto__ = cljs.core.seq(colls);
 if(temp__5804__auto__){
 var s = temp__5804__auto__;
-return cljs.core.concat.cljs$core$IFn$_invoke$arity$2(cljs.core.first(s),(function (){var G__10210 = cljs.core.rest(s);
-return (clojure.math.combinatorics.join.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.join.cljs$core$IFn$_invoke$arity$1(G__10210) : clojure.math.combinatorics.join.call(null,G__10210));
+return cljs.core.concat.cljs$core$IFn$_invoke$arity$2(cljs.core.first(s),(function (){var G__12956 = cljs.core.rest(s);
+return (clojure.math.combinatorics.join.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.join.cljs$core$IFn$_invoke$arity$1(G__12956) : clojure.math.combinatorics.join.call(null,G__12956));
 })());
 } else {
 return null;
@@ -37,25 +37,25 @@ return true;
 });
 clojure.math.combinatorics.index_combinations = (function clojure$math$combinatorics$index_combinations(n,cnt){
 return (new cljs.core.LazySeq(null,(function (){
-var c = cljs.core.vec(cljs.core.cons(null,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$index_combinations_$_iter__10216(s__10217){
+var c = cljs.core.vec(cljs.core.cons(null,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$index_combinations_$_iter__12961(s__12962){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10217__$1 = s__10217;
+var s__12962__$1 = s__12962;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10217__$1);
+var temp__5804__auto__ = cljs.core.seq(s__12962__$1);
 if(temp__5804__auto__){
-var s__10217__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10217__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10217__$2);
+var s__12962__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__12962__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__12962__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10219 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10218 = (0);
+var b__12964 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__12963 = (0);
 while(true){
-if((i__10218 < size__5522__auto__)){
-var j = cljs.core._nth(c__5521__auto__,i__10218);
-cljs.core.chunk_append(b__10219,((j + cnt) + (- (n + (1)))));
+if((i__12963 < size__5522__auto__)){
+var j = cljs.core._nth(c__5521__auto__,i__12963);
+cljs.core.chunk_append(b__12964,((j + cnt) + (- (n + (1)))));
 
-var G__10679 = (i__10218 + (1));
-i__10218 = G__10679;
+var G__13693 = (i__12963 + (1));
+i__12963 = G__13693;
 continue;
 } else {
 return true;
@@ -63,13 +63,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10219),clojure$math$combinatorics$index_combinations_$_iter__10216(cljs.core.chunk_rest(s__10217__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__12964),clojure$math$combinatorics$index_combinations_$_iter__12961(cljs.core.chunk_rest(s__12962__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10219),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__12964),null);
 }
 } else {
-var j = cljs.core.first(s__10217__$2);
-return cljs.core.cons(((j + cnt) + (- (n + (1)))),clojure$math$combinatorics$index_combinations_$_iter__10216(cljs.core.rest(s__10217__$2)));
+var j = cljs.core.first(s__12962__$2);
+return cljs.core.cons(((j + cnt) + (- (n + (1)))),clojure$math$combinatorics$index_combinations_$_iter__12961(cljs.core.rest(s__12962__$2)));
 }
 } else {
 return null;
@@ -94,10 +94,10 @@ while(true){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(j__$1,(1))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [c__$3,j__$1], null);
 } else {
-var G__10680 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(c__$3,(j__$1 - (1)),((c__$3.cljs$core$IFn$_invoke$arity$1 ? c__$3.cljs$core$IFn$_invoke$arity$1(j__$1) : c__$3.call(null,j__$1)) - (1)));
-var G__10681 = (j__$1 - (1));
-c__$3 = G__10680;
-j__$1 = G__10681;
+var G__13694 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(c__$3,(j__$1 - (1)),((c__$3.cljs$core$IFn$_invoke$arity$1 ? c__$3.cljs$core$IFn$_invoke$arity$1(j__$1) : c__$3.call(null,j__$1)) - (1)));
+var G__13695 = (j__$1 - (1));
+c__$3 = G__13694;
+j__$1 = G__13695;
 continue;
 }
 break;
@@ -131,12 +131,12 @@ var mi = (m.cljs$core$IFn$_invoke$arity$1 ? m.cljs$core$IFn$_invoke$arity$1(inde
 if((quantity_to_distribute <= mi)){
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(distribution__$1,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [index__$1,quantity_to_distribute,total], null));
 } else {
-var G__10682 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(distribution__$1,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [index__$1,mi,(already_distributed__$1 + mi)], null));
-var G__10683 = (index__$1 + (1));
-var G__10684 = (already_distributed__$1 + mi);
-distribution__$1 = G__10682;
-index__$1 = G__10683;
-already_distributed__$1 = G__10684;
+var G__13696 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(distribution__$1,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [index__$1,mi,(already_distributed__$1 + mi)], null));
+var G__13697 = (index__$1 + (1));
+var G__13698 = (already_distributed__$1 + mi);
+distribution__$1 = G__13696;
+index__$1 = G__13697;
+already_distributed__$1 = G__13698;
 continue;
 }
 }
@@ -144,10 +144,10 @@ break;
 }
 });
 clojure.math.combinatorics.next_distribution = (function clojure$math$combinatorics$next_distribution(m,total,distribution){
-var vec__10261 = cljs.core.peek(distribution);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10261,(0),null);
-var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10261,(1),null);
-var this_and_to_the_left = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10261,(2),null);
+var vec__12983 = cljs.core.peek(distribution);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12983,(0),null);
+var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12983,(1),null);
+var this_and_to_the_left = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12983,(2),null);
 if((index < (cljs.core.count(m) - (1)))){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(this_bucket,(1))){
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.pop(distribution),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(index + (1)),(1),this_and_to_the_left], null));
@@ -160,17 +160,17 @@ return null;
 } else {
 var distribution__$1 = cljs.core.pop(distribution);
 while(true){
-var vec__10287 = cljs.core.peek(distribution__$1);
-var index__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10287,(0),null);
-var this_bucket__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10287,(1),null);
-var this_and_to_the_left__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10287,(2),null);
+var vec__12989 = cljs.core.peek(distribution__$1);
+var index__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12989,(0),null);
+var this_bucket__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12989,(1),null);
+var this_and_to_the_left__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12989,(2),null);
 var distribution__$2 = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(this_bucket__$1,(1)))?cljs.core.pop(distribution__$1):cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.pop(distribution__$1),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [index__$1,(this_bucket__$1 - (1)),(this_and_to_the_left__$1 - (1))], null)));
 if(((total - (this_and_to_the_left__$1 - (1))) <= cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core._PLUS_,cljs.core.subvec.cljs$core$IFn$_invoke$arity$2(m,(index__$1 + (1)))))){
 return clojure.math.combinatorics.distribute(m,(index__$1 + (1)),total,distribution__$2,(this_and_to_the_left__$1 - (1)));
 } else {
 if(cljs.core.seq(distribution__$2)){
-var G__10685 = distribution__$2;
-distribution__$1 = G__10685;
+var G__13699 = distribution__$2;
+distribution__$1 = G__13699;
 continue;
 } else {
 return null;
@@ -204,27 +204,27 @@ clojure.math.combinatorics.multi_comb = (function clojure$math$combinatorics$mul
 var f = cljs.core.frequencies(l);
 var v = cljs.core.vec(cljs.core.distinct.cljs$core$IFn$_invoke$arity$1(l));
 var domain = cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(v));
-var m = cljs.core.vec((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$multi_comb_$_iter__10335(s__10336){
+var m = cljs.core.vec((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$multi_comb_$_iter__13004(s__13005){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10336__$1 = s__10336;
+var s__13005__$1 = s__13005;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10336__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13005__$1);
 if(temp__5804__auto__){
-var s__10336__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10336__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10336__$2);
+var s__13005__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13005__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13005__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10338 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10337 = (0);
+var b__13007 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13006 = (0);
 while(true){
-if((i__10337 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10337);
-cljs.core.chunk_append(b__10338,(function (){var G__10341 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10341) : f.call(null,G__10341));
+if((i__13006 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13006);
+cljs.core.chunk_append(b__13007,(function (){var G__13011 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13011) : f.call(null,G__13011));
 })());
 
-var G__10686 = (i__10337 + (1));
-i__10337 = G__10686;
+var G__13704 = (i__13006 + (1));
+i__13006 = G__13704;
 continue;
 } else {
 return true;
@@ -232,15 +232,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10338),clojure$math$combinatorics$multi_comb_$_iter__10335(cljs.core.chunk_rest(s__10336__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13007),clojure$math$combinatorics$multi_comb_$_iter__13004(cljs.core.chunk_rest(s__13005__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10338),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13007),null);
 }
 } else {
-var i = cljs.core.first(s__10336__$2);
-return cljs.core.cons((function (){var G__10346 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10346) : f.call(null,G__10346));
-})(),clojure$math$combinatorics$multi_comb_$_iter__10335(cljs.core.rest(s__10336__$2)));
+var i = cljs.core.first(s__13005__$2);
+return cljs.core.cons((function (){var G__13014 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13014) : f.call(null,G__13014));
+})(),clojure$math$combinatorics$multi_comb_$_iter__13004(cljs.core.rest(s__13005__$2)));
 }
 } else {
 return null;
@@ -252,45 +252,45 @@ break;
 return iter__5523__auto__(domain);
 })());
 var qs = clojure.math.combinatorics.bounded_distributions(m,t);
-var iter__5523__auto__ = (function clojure$math$combinatorics$multi_comb_$_iter__10347(s__10348){
+var iter__5523__auto__ = (function clojure$math$combinatorics$multi_comb_$_iter__13015(s__13016){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10348__$1 = s__10348;
+var s__13016__$1 = s__13016;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10348__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13016__$1);
 if(temp__5804__auto__){
-var s__10348__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10348__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10348__$2);
+var s__13016__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13016__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13016__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10350 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10349 = (0);
+var b__13018 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13017 = (0);
 while(true){
-if((i__10349 < size__5522__auto__)){
-var q = cljs.core._nth(c__5521__auto__,i__10349);
-cljs.core.chunk_append(b__10350,clojure.math.combinatorics.join((function (){var iter__5523__auto__ = ((function (i__10349,q,c__5521__auto__,size__5522__auto__,b__10350,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs){
-return (function clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10354(s__10355){
-return (new cljs.core.LazySeq(null,((function (i__10349,q,c__5521__auto__,size__5522__auto__,b__10350,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs){
+if((i__13017 < size__5522__auto__)){
+var q = cljs.core._nth(c__5521__auto__,i__13017);
+cljs.core.chunk_append(b__13018,clojure.math.combinatorics.join((function (){var iter__5523__auto__ = ((function (i__13017,q,c__5521__auto__,size__5522__auto__,b__13018,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs){
+return (function clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13025(s__13026){
+return (new cljs.core.LazySeq(null,((function (i__13017,q,c__5521__auto__,size__5522__auto__,b__13018,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs){
 return (function (){
-var s__10355__$1 = s__10355;
+var s__13026__$1 = s__13026;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10355__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13026__$1);
 if(temp__5804__auto____$1){
-var s__10355__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10355__$2)){
-var c__5521__auto____$1 = cljs.core.chunk_first(s__10355__$2);
+var s__13026__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13026__$2)){
+var c__5521__auto____$1 = cljs.core.chunk_first(s__13026__$2);
 var size__5522__auto____$1 = cljs.core.count(c__5521__auto____$1);
-var b__10357 = cljs.core.chunk_buffer(size__5522__auto____$1);
-if((function (){var i__10356 = (0);
+var b__13028 = cljs.core.chunk_buffer(size__5522__auto____$1);
+if((function (){var i__13027 = (0);
 while(true){
-if((i__10356 < size__5522__auto____$1)){
-var vec__10362 = cljs.core._nth(c__5521__auto____$1,i__10356);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10362,(0),null);
-var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10362,(1),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10362,(2),null);
-cljs.core.chunk_append(b__10357,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))));
+if((i__13027 < size__5522__auto____$1)){
+var vec__13032 = cljs.core._nth(c__5521__auto____$1,i__13027);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13032,(0),null);
+var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13032,(1),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13032,(2),null);
+cljs.core.chunk_append(b__13028,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))));
 
-var G__10687 = (i__10356 + (1));
-i__10356 = G__10687;
+var G__13723 = (i__13027 + (1));
+i__13027 = G__13723;
 continue;
 } else {
 return true;
@@ -298,31 +298,31 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10357),clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10354(cljs.core.chunk_rest(s__10355__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13028),clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13025(cljs.core.chunk_rest(s__13026__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10357),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13028),null);
 }
 } else {
-var vec__10365 = cljs.core.first(s__10355__$2);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10365,(0),null);
-var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10365,(1),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10365,(2),null);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))),clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10354(cljs.core.rest(s__10355__$2)));
+var vec__13044 = cljs.core.first(s__13026__$2);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13044,(0),null);
+var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13044,(1),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13044,(2),null);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))),clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13025(cljs.core.rest(s__13026__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__10349,q,c__5521__auto__,size__5522__auto__,b__10350,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs))
+});})(i__13017,q,c__5521__auto__,size__5522__auto__,b__13018,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs))
 ,null,null));
-});})(i__10349,q,c__5521__auto__,size__5522__auto__,b__10350,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs))
+});})(i__13017,q,c__5521__auto__,size__5522__auto__,b__13018,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs))
 ;
 return iter__5523__auto__(q);
 })()));
 
-var G__10688 = (i__10349 + (1));
-i__10349 = G__10688;
+var G__13724 = (i__13017 + (1));
+i__13017 = G__13724;
 continue;
 } else {
 return true;
@@ -330,35 +330,35 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10350),clojure$math$combinatorics$multi_comb_$_iter__10347(cljs.core.chunk_rest(s__10348__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13018),clojure$math$combinatorics$multi_comb_$_iter__13015(cljs.core.chunk_rest(s__13016__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10350),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13018),null);
 }
 } else {
-var q = cljs.core.first(s__10348__$2);
-return cljs.core.cons(clojure.math.combinatorics.join((function (){var iter__5523__auto__ = ((function (q,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs){
-return (function clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10372(s__10373){
+var q = cljs.core.first(s__13016__$2);
+return cljs.core.cons(clojure.math.combinatorics.join((function (){var iter__5523__auto__ = ((function (q,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs){
+return (function clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13049(s__13050){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10373__$1 = s__10373;
+var s__13050__$1 = s__13050;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10373__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13050__$1);
 if(temp__5804__auto____$1){
-var s__10373__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10373__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10373__$2);
+var s__13050__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13050__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13050__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10375 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10374 = (0);
+var b__13052 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13051 = (0);
 while(true){
-if((i__10374 < size__5522__auto__)){
-var vec__10378 = cljs.core._nth(c__5521__auto__,i__10374);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10378,(0),null);
-var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10378,(1),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10378,(2),null);
-cljs.core.chunk_append(b__10375,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))));
+if((i__13051 < size__5522__auto__)){
+var vec__13053 = cljs.core._nth(c__5521__auto__,i__13051);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13053,(0),null);
+var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13053,(1),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13053,(2),null);
+cljs.core.chunk_append(b__13052,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))));
 
-var G__10689 = (i__10374 + (1));
-i__10374 = G__10689;
+var G__13736 = (i__13051 + (1));
+i__13051 = G__13736;
 continue;
 } else {
 return true;
@@ -366,16 +366,16 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10375),clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10372(cljs.core.chunk_rest(s__10373__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13052),clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13049(cljs.core.chunk_rest(s__13050__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10375),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13052),null);
 }
 } else {
-var vec__10381 = cljs.core.first(s__10373__$2);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10381,(0),null);
-var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10381,(1),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10381,(2),null);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))),clojure$math$combinatorics$multi_comb_$_iter__10347_$_iter__10372(cljs.core.rest(s__10373__$2)));
+var vec__13056 = cljs.core.first(s__13050__$2);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13056,(0),null);
+var this_bucket = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13056,(1),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13056,(2),null);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(this_bucket,(v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(index) : v.call(null,index))),clojure$math$combinatorics$multi_comb_$_iter__13015_$_iter__13049(cljs.core.rest(s__13050__$2)));
 }
 } else {
 return null;
@@ -383,10 +383,10 @@ return null;
 break;
 }
 }),null,null));
-});})(q,s__10348__$2,temp__5804__auto__,f,v,domain,m,qs))
+});})(q,s__13016__$2,temp__5804__auto__,f,v,domain,m,qs))
 ;
 return iter__5523__auto__(q);
-})()),clojure$math$combinatorics$multi_comb_$_iter__10347(cljs.core.rest(s__10348__$2)));
+})()),clojure$math$combinatorics$multi_comb_$_iter__13015(cljs.core.rest(s__13016__$2)));
 }
 } else {
 return null;
@@ -410,25 +410,25 @@ if((t > cnt)){
 return null;
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(t,(1))){
-var iter__5523__auto__ = (function clojure$math$combinatorics$combinations_$_iter__10389(s__10390){
+var iter__5523__auto__ = (function clojure$math$combinatorics$combinations_$_iter__13069(s__13070){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10390__$1 = s__10390;
+var s__13070__$1 = s__13070;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10390__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13070__$1);
 if(temp__5804__auto__){
-var s__10390__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10390__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10390__$2);
+var s__13070__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13070__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13070__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10392 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10391 = (0);
+var b__13072 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13071 = (0);
 while(true){
-if((i__10391 < size__5522__auto__)){
-var item = cljs.core._nth(c__5521__auto__,i__10391);
-cljs.core.chunk_append(b__10392,(new cljs.core.List(null,item,null,(1),null)));
+if((i__13071 < size__5522__auto__)){
+var item = cljs.core._nth(c__5521__auto__,i__13071);
+cljs.core.chunk_append(b__13072,(new cljs.core.List(null,item,null,(1),null)));
 
-var G__10690 = (i__10391 + (1));
-i__10391 = G__10690;
+var G__13745 = (i__13071 + (1));
+i__13071 = G__13745;
 continue;
 } else {
 return true;
@@ -436,13 +436,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10392),clojure$math$combinatorics$combinations_$_iter__10389(cljs.core.chunk_rest(s__10390__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13072),clojure$math$combinatorics$combinations_$_iter__13069(cljs.core.chunk_rest(s__13070__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10392),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13072),null);
 }
 } else {
-var item = cljs.core.first(s__10390__$2);
-return cljs.core.cons((new cljs.core.List(null,item,null,(1),null)),clojure$math$combinatorics$combinations_$_iter__10389(cljs.core.rest(s__10390__$2)));
+var item = cljs.core.first(s__13070__$2);
+return cljs.core.cons((new cljs.core.List(null,item,null,(1),null)),clojure$math$combinatorics$combinations_$_iter__13069(cljs.core.rest(s__13070__$2)));
 }
 } else {
 return null;
@@ -457,8 +457,8 @@ if(cljs.core.truth_(clojure.math.combinatorics.all_different_QMARK_(items))){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(t,cnt)){
 return (new cljs.core.List(null,cljs.core.seq(items),null,(1),null));
 } else {
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__10386_SHARP_){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2(v_items,p1__10386_SHARP_);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__13065_SHARP_){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2(v_items,p1__13065_SHARP_);
 }),clojure.math.combinatorics.index_combinations(t,cnt));
 }
 } else {
@@ -480,8 +480,8 @@ return clojure.math.combinatorics.multi_comb(items,t);
 clojure.math.combinatorics.unchunk = (function clojure$math$combinatorics$unchunk(s){
 return (new cljs.core.LazySeq(null,(function (){
 if(cljs.core.seq(s)){
-return cljs.core.cons(cljs.core.first(s),(function (){var G__10401 = cljs.core.rest(s);
-return (clojure.math.combinatorics.unchunk.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.unchunk.cljs$core$IFn$_invoke$arity$1(G__10401) : clojure.math.combinatorics.unchunk.call(null,G__10401));
+return cljs.core.cons(cljs.core.first(s),(function (){var G__13089 = cljs.core.rest(s);
+return (clojure.math.combinatorics.unchunk.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.unchunk.cljs$core$IFn$_invoke$arity$1(G__13089) : clojure.math.combinatorics.unchunk.call(null,G__13089));
 })());
 } else {
 return null;
@@ -501,14 +501,14 @@ return clojure.math.combinatorics.combinations(items,n);
  */
 clojure.math.combinatorics.cartesian_product = (function clojure$math$combinatorics$cartesian_product(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___10691 = arguments.length;
-var i__5770__auto___10692 = (0);
+var len__5769__auto___13750 = arguments.length;
+var i__5770__auto___13751 = (0);
 while(true){
-if((i__5770__auto___10692 < len__5769__auto___10691)){
-args__5775__auto__.push((arguments[i__5770__auto___10692]));
+if((i__5770__auto___13751 < len__5769__auto___13750)){
+args__5775__auto__.push((arguments[i__5770__auto___13751]));
 
-var G__10693 = (i__5770__auto___10692 + (1));
-i__5770__auto___10692 = G__10693;
+var G__13752 = (i__5770__auto___13751 + (1));
+i__5770__auto___13751 = G__13752;
 continue;
 } else {
 }
@@ -534,10 +534,10 @@ if(temp__5802__auto__){
 var rst = temp__5802__auto__;
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v_seqs__$2,i,rst);
 } else {
-var G__10694 = (i - (1));
-var G__10695 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v_seqs__$2,i,(v_original_seqs.cljs$core$IFn$_invoke$arity$1 ? v_original_seqs.cljs$core$IFn$_invoke$arity$1(i) : v_original_seqs.call(null,i)));
-i = G__10694;
-v_seqs__$2 = G__10695;
+var G__13753 = (i - (1));
+var G__13754 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v_seqs__$2,i,(v_original_seqs.cljs$core$IFn$_invoke$arity$1 ? v_original_seqs.cljs$core$IFn$_invoke$arity$1(i) : v_original_seqs.call(null,i)));
+i = G__13753;
+v_seqs__$2 = G__13754;
 continue;
 }
 }
@@ -564,9 +564,9 @@ return null;
 (clojure.math.combinatorics.cartesian_product.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(clojure.math.combinatorics.cartesian_product.cljs$lang$applyTo = (function (seq10402){
+(clojure.math.combinatorics.cartesian_product.cljs$lang$applyTo = (function (seq13095){
 var self__5755__auto__ = this;
-return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq10402));
+return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq13095));
 }));
 
 /**
@@ -582,13 +582,13 @@ while(true){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(i,(-1))){
 return null;
 } else {
-if(((v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i)) < (function (){var G__10409 = (i + (1));
-return (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(G__10409) : v.call(null,G__10409));
+if(((v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i)) < (function (){var G__13128 = (i + (1));
+return (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(G__13128) : v.call(null,G__13128));
 })())){
 return i;
 } else {
-var G__10696 = (i - (1));
-i = G__10696;
+var G__13755 = (i - (1));
+i = G__13755;
 continue;
 
 }
@@ -603,8 +603,8 @@ while(true){
 if((vj < (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i)))){
 return i;
 } else {
-var G__10697 = (i - (1));
-i = G__10697;
+var G__13756 = (i - (1));
+i = G__13756;
 continue;
 }
 break;
@@ -615,12 +615,12 @@ var k = (j + (1));
 var l__$1 = (len - (1));
 while(true){
 if((k < l__$1)){
-var G__10698 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(v__$1,k,(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(l__$1) : v__$1.call(null,l__$1)),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([l__$1,(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(k) : v__$1.call(null,k))], 0));
-var G__10699 = (k + (1));
-var G__10700 = (l__$1 - (1));
-v__$1 = G__10698;
-k = G__10699;
-l__$1 = G__10700;
+var G__13757 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(v__$1,k,(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(l__$1) : v__$1.call(null,l__$1)),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([l__$1,(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(k) : v__$1.call(null,k))], 0));
+var G__13758 = (k + (1));
+var G__13759 = (l__$1 - (1));
+v__$1 = G__13757;
+k = G__13758;
+l__$1 = G__13759;
 continue;
 } else {
 return v__$1;
@@ -634,8 +634,8 @@ return null;
 clojure.math.combinatorics.vec_lex_permutations = (function clojure$math$combinatorics$vec_lex_permutations(v){
 if(cljs.core.truth_(v)){
 return cljs.core.cons(v,(new cljs.core.LazySeq(null,(function (){
-var G__10414 = clojure.math.combinatorics.iter_perm(v);
-return (clojure.math.combinatorics.vec_lex_permutations.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.vec_lex_permutations.cljs$core$IFn$_invoke$arity$1(G__10414) : clojure.math.combinatorics.vec_lex_permutations.call(null,G__10414));
+var G__13134 = clojure.math.combinatorics.iter_perm(v);
+return (clojure.math.combinatorics.vec_lex_permutations.cljs$core$IFn$_invoke$arity$1 ? clojure.math.combinatorics.vec_lex_permutations.cljs$core$IFn$_invoke$arity$1(G__13134) : clojure.math.combinatorics.vec_lex_permutations.call(null,G__13134));
 }),null,null)));
 } else {
 return null;
@@ -678,27 +678,27 @@ return and__5043__auto__;
 clojure.math.combinatorics.multi_perm = (function clojure$math$combinatorics$multi_perm(l){
 var f = cljs.core.frequencies(l);
 var v = cljs.core.vec(cljs.core.distinct.cljs$core$IFn$_invoke$arity$1(l));
-var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$multi_perm_$_iter__10419(s__10420){
+var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$multi_perm_$_iter__13146(s__13147){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10420__$1 = s__10420;
+var s__13147__$1 = s__13147;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10420__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13147__$1);
 if(temp__5804__auto__){
-var s__10420__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10420__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10420__$2);
+var s__13147__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13147__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13147__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10422 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10421 = (0);
+var b__13149 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13148 = (0);
 while(true){
-if((i__10421 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10421);
-cljs.core.chunk_append(b__10422,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10423 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10423) : f.call(null,G__10423));
+if((i__13148 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13148);
+cljs.core.chunk_append(b__13149,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13157 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13157) : f.call(null,G__13157));
 })(),i));
 
-var G__10701 = (i__10421 + (1));
-i__10421 = G__10701;
+var G__13760 = (i__13148 + (1));
+i__13148 = G__13760;
 continue;
 } else {
 return true;
@@ -706,15 +706,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10422),clojure$math$combinatorics$multi_perm_$_iter__10419(cljs.core.chunk_rest(s__10420__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13149),clojure$math$combinatorics$multi_perm_$_iter__13146(cljs.core.chunk_rest(s__13147__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10422),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13149),null);
 }
 } else {
-var i = cljs.core.first(s__10420__$2);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10428 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10428) : f.call(null,G__10428));
-})(),i),clojure$math$combinatorics$multi_perm_$_iter__10419(cljs.core.rest(s__10420__$2)));
+var i = cljs.core.first(s__13147__$2);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13163 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13163) : f.call(null,G__13163));
+})(),i),clojure$math$combinatorics$multi_perm_$_iter__13146(cljs.core.rest(s__13147__$2)));
 }
 } else {
 return null;
@@ -737,8 +737,8 @@ return clojure.math.combinatorics.lex_permutations(items);
 } else {
 if(cljs.core.truth_(clojure.math.combinatorics.all_different_QMARK_(items))){
 var v = cljs.core.vec(items);
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__10429_SHARP_){
-return cljs.core.map.cljs$core$IFn$_invoke$arity$2(v,p1__10429_SHARP_);
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__13168_SHARP_){
+return cljs.core.map.cljs$core$IFn$_invoke$arity$2(v,p1__13168_SHARP_);
 }),clojure.math.combinatorics.lex_permutations(cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(v))));
 } else {
 return clojure.math.combinatorics.multi_perm(items);
@@ -769,10 +769,10 @@ while(true){
 if((n__$1 === (0))){
 return acc;
 } else {
-var G__10702 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(acc,n__$1) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,acc,n__$1));
-var G__10703 = (n__$1 - (1));
-acc = G__10702;
-n__$1 = G__10703;
+var G__13763 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(acc,n__$1) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,acc,n__$1));
+var G__13764 = (n__$1 - (1));
+acc = G__13763;
+n__$1 = G__13764;
 continue;
 }
 break;
@@ -803,12 +803,12 @@ return digits;
 } else {
 var q = cljs.core.quot(n__$1,divisor);
 var r = cljs.core.rem(n__$1,divisor);
-var G__10708 = q;
-var G__10709 = cljs.core.cons(r,digits);
-var G__10710 = (divisor + (1));
-n__$1 = G__10708;
-digits = G__10709;
-divisor = G__10710;
+var G__13767 = q;
+var G__13768 = cljs.core.cons(r,digits);
+var G__13769 = (divisor + (1));
+n__$1 = G__13767;
+digits = G__13768;
+divisor = G__13769;
 continue;
 }
 break;
@@ -822,12 +822,12 @@ while(true){
 if((n__$1 === (0))){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(acc,cljs.core.rest(l__$1));
 } else {
-var G__10711 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(acc,cljs.core.first(l__$1));
-var G__10712 = cljs.core.rest(l__$1);
-var G__10713 = (n__$1 - (1));
-acc = G__10711;
-l__$1 = G__10712;
-n__$1 = G__10713;
+var G__13771 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(acc,cljs.core.first(l__$1));
+var G__13772 = cljs.core.rest(l__$1);
+var G__13773 = (n__$1 - (1));
+acc = G__13771;
+l__$1 = G__13772;
+n__$1 = G__13773;
 continue;
 }
 break;
@@ -854,12 +854,12 @@ return perm;
 } else {
 var i = cljs.core.first(indices);
 var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(l__$1,i);
-var G__10714 = cljs.core.rest(indices);
-var G__10715 = clojure.math.combinatorics.remove_nth(l__$1,i);
-var G__10716 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(perm,item);
-indices = G__10714;
-l__$1 = G__10715;
-perm = G__10716;
+var G__13777 = cljs.core.rest(indices);
+var G__13778 = clojure.math.combinatorics.remove_nth(l__$1,i);
+var G__13779 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(perm,item);
+indices = G__13777;
+l__$1 = G__13778;
+perm = G__13779;
 continue;
 }
 break;
@@ -884,27 +884,27 @@ return clojure.math.combinatorics.count_permutations_from_frequencies(cljs.core.
  * lexicographic permutations you get by varying the first item
  */
 clojure.math.combinatorics.initial_perm_numbers = (function clojure$math$combinatorics$initial_perm_numbers(freqs){
-return cljs.core.reductions.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,(0),(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$initial_perm_numbers_$_iter__10456(s__10457){
+return cljs.core.reductions.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,(0),(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$initial_perm_numbers_$_iter__13207(s__13208){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10457__$1 = s__10457;
+var s__13208__$1 = s__13208;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10457__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13208__$1);
 if(temp__5804__auto__){
-var s__10457__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10457__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10457__$2);
+var s__13208__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13208__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13208__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10459 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10458 = (0);
+var b__13210 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13209 = (0);
 while(true){
-if((i__10458 < size__5522__auto__)){
-var vec__10462 = cljs.core._nth(c__5521__auto__,i__10458);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10462,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10462,(1),null);
-cljs.core.chunk_append(b__10459,clojure.math.combinatorics.count_permutations_from_frequencies(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(freqs,k,(v - (1)))));
+if((i__13209 < size__5522__auto__)){
+var vec__13211 = cljs.core._nth(c__5521__auto__,i__13209);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13211,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13211,(1),null);
+cljs.core.chunk_append(b__13210,clojure.math.combinatorics.count_permutations_from_frequencies(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(freqs,k,(v - (1)))));
 
-var G__10717 = (i__10458 + (1));
-i__10458 = G__10717;
+var G__13780 = (i__13209 + (1));
+i__13209 = G__13780;
 continue;
 } else {
 return true;
@@ -912,15 +912,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10459),clojure$math$combinatorics$initial_perm_numbers_$_iter__10456(cljs.core.chunk_rest(s__10457__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13210),clojure$math$combinatorics$initial_perm_numbers_$_iter__13207(cljs.core.chunk_rest(s__13208__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10459),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13210),null);
 }
 } else {
-var vec__10475 = cljs.core.first(s__10457__$2);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10475,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10475,(1),null);
-return cljs.core.cons(clojure.math.combinatorics.count_permutations_from_frequencies(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(freqs,k,(v - (1)))),clojure$math$combinatorics$initial_perm_numbers_$_iter__10456(cljs.core.rest(s__10457__$2)));
+var vec__13218 = cljs.core.first(s__13208__$2);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13218,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13218,(1),null);
+return cljs.core.cons(clojure.math.combinatorics.count_permutations_from_frequencies(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(freqs,k,(v - (1)))),clojure$math$combinatorics$initial_perm_numbers_$_iter__13207(cljs.core.rest(s__13208__$2)));
 }
 } else {
 return null;
@@ -942,10 +942,10 @@ while(true){
 if((((cljs.core.first(perm_numbers__$1) <= n)) && ((n < cljs.core.second(perm_numbers__$1))))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [index,(n - cljs.core.first(perm_numbers__$1))], null);
 } else {
-var G__10727 = cljs.core.rest(perm_numbers__$1);
-var G__10728 = (index + (1));
-perm_numbers__$1 = G__10727;
-index = G__10728;
+var G__13781 = cljs.core.rest(perm_numbers__$1);
+var G__13782 = (index + (1));
+perm_numbers__$1 = G__13781;
+index = G__13782;
 continue;
 }
 break;
@@ -970,17 +970,17 @@ while(true){
 if((n__$1 === (0))){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(digits,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core._PLUS_,cljs.core.vals(freqs__$1)),(0)));
 } else {
-var vec__10504 = clojure.math.combinatorics.index_remainder(clojure.math.combinatorics.initial_perm_numbers(freqs__$1),n__$1);
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10504,(0),null);
-var remainder = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10504,(1),null);
-var G__10729 = remainder;
-var G__10730 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(digits,index);
-var G__10731 = (function (){var nth_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(cljs.core.keys(freqs__$1),index);
+var vec__13225 = clojure.math.combinatorics.index_remainder(clojure.math.combinatorics.initial_perm_numbers(freqs__$1),n__$1);
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13225,(0),null);
+var remainder = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13225,(1),null);
+var G__13787 = remainder;
+var G__13788 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(digits,index);
+var G__13789 = (function (){var nth_key = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(cljs.core.keys(freqs__$1),index);
 return clojure.math.combinatorics.dec_key(freqs__$1,nth_key);
 })();
-n__$1 = G__10729;
-digits = G__10730;
-freqs__$1 = G__10731;
+n__$1 = G__13787;
+digits = G__13788;
+freqs__$1 = G__13789;
 continue;
 }
 break;
@@ -1005,12 +1005,12 @@ return perm;
 } else {
 var i = cljs.core.first(indices);
 var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(cljs.core.keys(freqs),i);
-var G__10732 = clojure.math.combinatorics.dec_key(freqs,item);
-var G__10733 = cljs.core.rest(indices);
-var G__10734 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(perm,item);
-freqs = G__10732;
-indices = G__10733;
-perm = G__10734;
+var G__13790 = clojure.math.combinatorics.dec_key(freqs,item);
+var G__13791 = cljs.core.rest(indices);
+var G__13792 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(perm,item);
+freqs = G__13790;
+indices = G__13791;
+perm = G__13792;
 continue;
 }
 break;
@@ -1034,27 +1034,27 @@ return cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2(v,perm_indices)
 } else {
 var v = cljs.core.vec(cljs.core.distinct.cljs$core$IFn$_invoke$arity$1(items));
 var f = cljs.core.frequencies(items);
-var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$nth_permutation_$_iter__10507(s__10508){
+var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$nth_permutation_$_iter__13233(s__13234){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10508__$1 = s__10508;
+var s__13234__$1 = s__13234;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10508__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13234__$1);
 if(temp__5804__auto__){
-var s__10508__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10508__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10508__$2);
+var s__13234__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13234__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13234__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10510 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10509 = (0);
+var b__13236 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13235 = (0);
 while(true){
-if((i__10509 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10509);
-cljs.core.chunk_append(b__10510,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10511 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10511) : f.call(null,G__10511));
+if((i__13235 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13235);
+cljs.core.chunk_append(b__13236,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13237 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13237) : f.call(null,G__13237));
 })(),i));
 
-var G__10744 = (i__10509 + (1));
-i__10509 = G__10744;
+var G__13797 = (i__13235 + (1));
+i__13235 = G__13797;
 continue;
 } else {
 return true;
@@ -1062,15 +1062,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10510),clojure$math$combinatorics$nth_permutation_$_iter__10507(cljs.core.chunk_rest(s__10508__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13236),clojure$math$combinatorics$nth_permutation_$_iter__13233(cljs.core.chunk_rest(s__13234__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10510),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13236),null);
 }
 } else {
-var i = cljs.core.first(s__10508__$2);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10512 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10512) : f.call(null,G__10512));
-})(),i),clojure$math$combinatorics$nth_permutation_$_iter__10507(cljs.core.rest(s__10508__$2)));
+var i = cljs.core.first(s__13234__$2);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13238 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13238) : f.call(null,G__13238));
+})(),i),clojure$math$combinatorics$nth_permutation_$_iter__13233(cljs.core.rest(s__13234__$2)));
 }
 } else {
 return null;
@@ -1109,27 +1109,27 @@ return cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.partial.cljs$core$I
 } else {
 var v = cljs.core.vec(cljs.core.distinct.cljs$core$IFn$_invoke$arity$1(items));
 var f = cljs.core.frequencies(items);
-var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$drop_permutations_$_iter__10513(s__10514){
+var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$drop_permutations_$_iter__13239(s__13240){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10514__$1 = s__10514;
+var s__13240__$1 = s__13240;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10514__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13240__$1);
 if(temp__5804__auto__){
-var s__10514__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10514__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10514__$2);
+var s__13240__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13240__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13240__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10516 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10515 = (0);
+var b__13242 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13241 = (0);
 while(true){
-if((i__10515 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10515);
-cljs.core.chunk_append(b__10516,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10517 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10517) : f.call(null,G__10517));
+if((i__13241 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13241);
+cljs.core.chunk_append(b__13242,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13243 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13243) : f.call(null,G__13243));
 })(),i));
 
-var G__10747 = (i__10515 + (1));
-i__10515 = G__10747;
+var G__13798 = (i__13241 + (1));
+i__13241 = G__13798;
 continue;
 } else {
 return true;
@@ -1137,15 +1137,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10516),clojure$math$combinatorics$drop_permutations_$_iter__10513(cljs.core.chunk_rest(s__10514__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13242),clojure$math$combinatorics$drop_permutations_$_iter__13239(cljs.core.chunk_rest(s__13240__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10516),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13242),null);
 }
 } else {
-var i = cljs.core.first(s__10514__$2);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10518 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10518) : f.call(null,G__10518));
-})(),i),clojure$math$combinatorics$drop_permutations_$_iter__10513(cljs.core.rest(s__10514__$2)));
+var i = cljs.core.first(s__13240__$2);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13244 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13244) : f.call(null,G__13244));
+})(),i),clojure$math$combinatorics$drop_permutations_$_iter__13239(cljs.core.rest(s__13240__$2)));
 }
 } else {
 return null;
@@ -1178,10 +1178,10 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(k,(1))){
 return n;
 } else {
 if((k > cljs.core.quot(n,(2)))){
-var G__10757 = n;
-var G__10758 = (n - k);
-n = G__10757;
-k = G__10758;
+var G__13803 = n;
+var G__13804 = (n - k);
+n = G__13803;
+k = G__13804;
 continue;
 } else {
 return (cljs.core.apply.cljs$core$IFn$_invoke$arity$2(clojure.math.combinatorics._STAR__SINGLEQUOTE_,cljs.core.range.cljs$core$IFn$_invoke$arity$2(((n - k) + (1)),(n + (1)))) / cljs.core.apply.cljs$core$IFn$_invoke$arity$2(clojure.math.combinatorics._STAR__SINGLEQUOTE_,cljs.core.range.cljs$core$IFn$_invoke$arity$2((1),(k + (1)))));
@@ -1216,9 +1216,9 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(freqs),(1))){
 return (1);
 } else {
 var new_freqs = clojure.math.combinatorics.dec_key(freqs,cljs.core.first(cljs.core.keys(freqs)));
-var G__10519 = clojure.math.combinatorics.count_combinations_from_frequencies.call(null,new_freqs,(t - (1)));
-var G__10520 = clojure.math.combinatorics.count_combinations_from_frequencies.call(null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(freqs,cljs.core.first(cljs.core.keys(freqs))),t);
-return (clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__10519,G__10520) : clojure.math.combinatorics._PLUS__SINGLEQUOTE_.call(null,G__10519,G__10520));
+var G__13250 = clojure.math.combinatorics.count_combinations_from_frequencies.call(null,new_freqs,(t - (1)));
+var G__13251 = clojure.math.combinatorics.count_combinations_from_frequencies.call(null,cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(freqs,cljs.core.first(cljs.core.keys(freqs))),t);
+return (clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__13250,G__13251) : clojure.math.combinatorics._PLUS__SINGLEQUOTE_.call(null,G__13250,G__13251));
 
 }
 }
@@ -1242,12 +1242,12 @@ return clojure.math.combinatorics.count_combinations_from_frequencies.call(null,
  * (count (combinations items t)) but computed more directly
  */
 clojure.math.combinatorics.count_combinations = (function clojure$math$combinatorics$count_combinations(items,t){
-var count_combinations_from_frequencies_orig_val__10521 = clojure.math.combinatorics.count_combinations_from_frequencies;
-var count_combinations_from_frequencies_temp_val__10522 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
-(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__10522);
+var count_combinations_from_frequencies_orig_val__13254 = clojure.math.combinatorics.count_combinations_from_frequencies;
+var count_combinations_from_frequencies_temp_val__13255 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
+(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__13255);
 
 try{return clojure.math.combinatorics.count_combinations_unmemoized(items,t);
-}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__10521);
+}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__13254);
 }});
 clojure.math.combinatorics.expt_int = (function clojure$math$combinatorics$expt_int(base,pow){
 var n = pow;
@@ -1257,23 +1257,23 @@ while(true){
 var t = cljs.core.even_QMARK_(n);
 var n__$1 = cljs.core.quot(n,(2));
 if(t){
-var G__10767 = n__$1;
-var G__10768 = y;
-var G__10769 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,z) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,z));
-n = G__10767;
-y = G__10768;
-z = G__10769;
+var G__13812 = n__$1;
+var G__13813 = y;
+var G__13814 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,z) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,z));
+n = G__13812;
+y = G__13813;
+z = G__13814;
 continue;
 } else {
 if((n__$1 === (0))){
 return (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,y) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,y));
 } else {
-var G__10770 = n__$1;
-var G__10771 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,y) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,y));
-var G__10772 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,z) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,z));
-n = G__10770;
-y = G__10771;
-z = G__10772;
+var G__13818 = n__$1;
+var G__13819 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,y) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,y));
+var G__13820 = (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(z,z) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,z,z));
+n = G__13818;
+y = G__13819;
+z = G__13820;
 continue;
 
 }
@@ -1288,25 +1288,25 @@ return (1);
 if(cljs.core.truth_(clojure.math.combinatorics.all_different_QMARK_(items))){
 return clojure.math.combinatorics.expt_int((2),cljs.core.count(items));
 } else {
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$count_subsets_unmemoized_$_iter__10523(s__10524){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$count_subsets_unmemoized_$_iter__13263(s__13264){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10524__$1 = s__10524;
+var s__13264__$1 = s__13264;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10524__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13264__$1);
 if(temp__5804__auto__){
-var s__10524__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10524__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10524__$2);
+var s__13264__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13264__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13264__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10526 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10525 = (0);
+var b__13266 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13265 = (0);
 while(true){
-if((i__10525 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10525);
-cljs.core.chunk_append(b__10526,clojure.math.combinatorics.count_combinations_unmemoized(items,i));
+if((i__13265 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13265);
+cljs.core.chunk_append(b__13266,clojure.math.combinatorics.count_combinations_unmemoized(items,i));
 
-var G__10773 = (i__10525 + (1));
-i__10525 = G__10773;
+var G__13822 = (i__13265 + (1));
+i__13265 = G__13822;
 continue;
 } else {
 return true;
@@ -1314,13 +1314,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10526),clojure$math$combinatorics$count_subsets_unmemoized_$_iter__10523(cljs.core.chunk_rest(s__10524__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13266),clojure$math$combinatorics$count_subsets_unmemoized_$_iter__13263(cljs.core.chunk_rest(s__13264__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10526),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13266),null);
 }
 } else {
-var i = cljs.core.first(s__10524__$2);
-return cljs.core.cons(clojure.math.combinatorics.count_combinations_unmemoized(items,i),clojure$math$combinatorics$count_subsets_unmemoized_$_iter__10523(cljs.core.rest(s__10524__$2)));
+var i = cljs.core.first(s__13264__$2);
+return cljs.core.cons(clojure.math.combinatorics.count_combinations_unmemoized(items,i),clojure$math$combinatorics$count_subsets_unmemoized_$_iter__13263(cljs.core.rest(s__13264__$2)));
 }
 } else {
 return null;
@@ -1339,12 +1339,12 @@ return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$2((0),(clj
  * (count (subsets items)) but computed more directly
  */
 clojure.math.combinatorics.count_subsets = (function clojure$math$combinatorics$count_subsets(items){
-var count_combinations_from_frequencies_orig_val__10527 = clojure.math.combinatorics.count_combinations_from_frequencies;
-var count_combinations_from_frequencies_temp_val__10528 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
-(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__10528);
+var count_combinations_from_frequencies_orig_val__13280 = clojure.math.combinatorics.count_combinations_from_frequencies;
+var count_combinations_from_frequencies_temp_val__13281 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
+(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__13281);
 
 try{return clojure.math.combinatorics.count_subsets_unmemoized(items);
-}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__10527);
+}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__13280);
 }});
 /**
  * The nth element of the sequence of t-combinations of items,
@@ -1361,24 +1361,24 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(comb,cljs.core.take.cljs$cor
 } else {
 var dc_dt = clojure.math.combinatorics.n_take_k((cljs.core.count(items__$1) - (1)),(t__$1 - (1)));
 if((n__$1 < dc_dt)){
-var G__10774 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(comb,cljs.core.first(items__$1));
-var G__10775 = cljs.core.rest(items__$1);
-var G__10776 = (t__$1 - (1));
-var G__10777 = n__$1;
-comb = G__10774;
-items__$1 = G__10775;
-t__$1 = G__10776;
-n__$1 = G__10777;
+var G__13824 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(comb,cljs.core.first(items__$1));
+var G__13825 = cljs.core.rest(items__$1);
+var G__13826 = (t__$1 - (1));
+var G__13827 = n__$1;
+comb = G__13824;
+items__$1 = G__13825;
+t__$1 = G__13826;
+n__$1 = G__13827;
 continue;
 } else {
-var G__10778 = comb;
-var G__10779 = cljs.core.rest(items__$1);
-var G__10780 = t__$1;
-var G__10781 = (n__$1 - dc_dt);
-comb = G__10778;
-items__$1 = G__10779;
-t__$1 = G__10780;
-n__$1 = G__10781;
+var G__13829 = comb;
+var G__13830 = cljs.core.rest(items__$1);
+var G__13831 = t__$1;
+var G__13832 = (n__$1 - dc_dt);
+comb = G__13829;
+items__$1 = G__13830;
+t__$1 = G__13831;
+n__$1 = G__13832;
 continue;
 }
 }
@@ -1397,28 +1397,28 @@ var n__$1 = n;
 while(true){
 if((((n__$1 === (0))) || (cljs.core.empty_QMARK_(freqs__$1)))){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(comb,cljs.core.take.cljs$core$IFn$_invoke$arity$2(t__$1,clojure.math.combinatorics.join((function (){var iter__5523__auto__ = ((function (comb,freqs__$1,t__$1,n__$1){
-return (function clojure$math$combinatorics$nth_combination_freqs_$_iter__10539(s__10540){
+return (function clojure$math$combinatorics$nth_combination_freqs_$_iter__13321(s__13322){
 return (new cljs.core.LazySeq(null,((function (comb,freqs__$1,t__$1,n__$1){
 return (function (){
-var s__10540__$1 = s__10540;
+var s__13322__$1 = s__13322;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10540__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13322__$1);
 if(temp__5804__auto__){
-var s__10540__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10540__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10540__$2);
+var s__13322__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13322__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13322__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10542 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10541 = (0);
+var b__13324 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13323 = (0);
 while(true){
-if((i__10541 < size__5522__auto__)){
-var vec__10543 = cljs.core._nth(c__5521__auto__,i__10541);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10543,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10543,(1),null);
-cljs.core.chunk_append(b__10542,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(v,k));
+if((i__13323 < size__5522__auto__)){
+var vec__13337 = cljs.core._nth(c__5521__auto__,i__13323);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13337,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13337,(1),null);
+cljs.core.chunk_append(b__13324,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(v,k));
 
-var G__10782 = (i__10541 + (1));
-i__10541 = G__10782;
+var G__13839 = (i__13323 + (1));
+i__13323 = G__13839;
 continue;
 } else {
 return true;
@@ -1426,15 +1426,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10542),clojure$math$combinatorics$nth_combination_freqs_$_iter__10539(cljs.core.chunk_rest(s__10540__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13324),clojure$math$combinatorics$nth_combination_freqs_$_iter__13321(cljs.core.chunk_rest(s__13322__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10542),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13324),null);
 }
 } else {
-var vec__10546 = cljs.core.first(s__10540__$2);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10546,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10546,(1),null);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(v,k),clojure$math$combinatorics$nth_combination_freqs_$_iter__10539(cljs.core.rest(s__10540__$2)));
+var vec__13344 = cljs.core.first(s__13322__$2);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13344,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13344,(1),null);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(v,k),clojure$math$combinatorics$nth_combination_freqs_$_iter__13321(cljs.core.rest(s__13322__$2)));
 }
 } else {
 return null;
@@ -1452,24 +1452,24 @@ var first_key = cljs.core.first(cljs.core.keys(freqs__$1));
 var remove_one_key = clojure.math.combinatorics.dec_key(freqs__$1,first_key);
 var dc_dt = clojure.math.combinatorics.count_combinations_from_frequencies.call(null,remove_one_key,(t__$1 - (1)));
 if((n__$1 < dc_dt)){
-var G__10783 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(comb,first_key);
-var G__10784 = remove_one_key;
-var G__10785 = (t__$1 - (1));
-var G__10786 = n__$1;
-comb = G__10783;
-freqs__$1 = G__10784;
-t__$1 = G__10785;
-n__$1 = G__10786;
+var G__13846 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(comb,first_key);
+var G__13847 = remove_one_key;
+var G__13848 = (t__$1 - (1));
+var G__13849 = n__$1;
+comb = G__13846;
+freqs__$1 = G__13847;
+t__$1 = G__13848;
+n__$1 = G__13849;
 continue;
 } else {
-var G__10787 = comb;
-var G__10788 = cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(freqs__$1,first_key);
-var G__10789 = t__$1;
-var G__10790 = (n__$1 - dc_dt);
-comb = G__10787;
-freqs__$1 = G__10788;
-t__$1 = G__10789;
-n__$1 = G__10790;
+var G__13850 = comb;
+var G__13851 = cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(freqs__$1,first_key);
+var G__13852 = t__$1;
+var G__13853 = (n__$1 - dc_dt);
+comb = G__13850;
+freqs__$1 = G__13851;
+t__$1 = G__13852;
+n__$1 = G__13853;
 continue;
 }
 }
@@ -1488,33 +1488,33 @@ throw (new Error(["Assert failed: ",cljs.core.print_str.cljs$core$IFn$_invoke$ar
 if(cljs.core.truth_(clojure.math.combinatorics.all_different_QMARK_(items))){
 return clojure.math.combinatorics.nth_combination_distinct(items,t,n);
 } else {
-var count_combinations_from_frequencies_orig_val__10549 = clojure.math.combinatorics.count_combinations_from_frequencies;
-var count_combinations_from_frequencies_temp_val__10550 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
-(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__10550);
+var count_combinations_from_frequencies_orig_val__13347 = clojure.math.combinatorics.count_combinations_from_frequencies;
+var count_combinations_from_frequencies_temp_val__13348 = cljs.core.memoize(clojure.math.combinatorics.count_combinations_from_frequencies);
+(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_temp_val__13348);
 
 try{var v = cljs.core.vec(cljs.core.distinct.cljs$core$IFn$_invoke$arity$1(items));
 var f = cljs.core.frequencies(items);
-var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$nth_combination_$_iter__10551(s__10552){
+var indices = clojure.math.combinatorics.join((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$nth_combination_$_iter__13356(s__13357){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10552__$1 = s__10552;
+var s__13357__$1 = s__13357;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10552__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13357__$1);
 if(temp__5804__auto__){
-var s__10552__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10552__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10552__$2);
+var s__13357__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13357__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13357__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10554 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10553 = (0);
+var b__13359 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13358 = (0);
 while(true){
-if((i__10553 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10553);
-cljs.core.chunk_append(b__10554,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10555 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10555) : f.call(null,G__10555));
+if((i__13358 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13358);
+cljs.core.chunk_append(b__13359,cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13363 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13363) : f.call(null,G__13363));
 })(),i));
 
-var G__10795 = (i__10553 + (1));
-i__10553 = G__10795;
+var G__13866 = (i__13358 + (1));
+i__13358 = G__13866;
 continue;
 } else {
 return true;
@@ -1522,15 +1522,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10554),clojure$math$combinatorics$nth_combination_$_iter__10551(cljs.core.chunk_rest(s__10552__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13359),clojure$math$combinatorics$nth_combination_$_iter__13356(cljs.core.chunk_rest(s__13357__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10554),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13359),null);
 }
 } else {
-var i = cljs.core.first(s__10552__$2);
-return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__10556 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10556) : f.call(null,G__10556));
-})(),i),clojure$math$combinatorics$nth_combination_$_iter__10551(cljs.core.rest(s__10552__$2)));
+var i = cljs.core.first(s__13357__$2);
+return cljs.core.cons(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2((function (){var G__13364 = (v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(i) : v.call(null,i));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13364) : f.call(null,G__13364));
+})(),i),clojure$math$combinatorics$nth_combination_$_iter__13356(cljs.core.rest(s__13357__$2)));
 }
 } else {
 return null;
@@ -1543,7 +1543,7 @@ return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.cor
 })());
 var indices_freqs = cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.sorted_map(),cljs.core.frequencies(indices));
 return cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2(v,clojure.math.combinatorics.nth_combination_freqs(indices_freqs,t,n)));
-}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__10549);
+}finally {(clojure.math.combinatorics.count_combinations_from_frequencies = count_combinations_from_frequencies_orig_val__13347);
 }}
 });
 clojure.math.combinatorics.nth_subset = (function clojure$math$combinatorics$nth_subset(items,n){
@@ -1559,10 +1559,10 @@ var num_combinations = clojure.math.combinatorics.count_combinations(items,size)
 if((n__$1 < num_combinations)){
 return clojure.math.combinatorics.nth_combination(items,size,n__$1);
 } else {
-var G__10796 = (size + (1));
-var G__10797 = (n__$1 - num_combinations);
-size = G__10796;
-n__$1 = G__10797;
+var G__13877 = (size + (1));
+var G__13878 = (n__$1 - num_combinations);
+size = G__13877;
+n__$1 = G__13878;
 continue;
 }
 break;
@@ -1583,10 +1583,10 @@ throw (new Error("Assert failed: (seq l)"));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(item,cljs.core.first(l__$1))){
 return n;
 } else {
-var G__10798 = cljs.core.rest(l__$1);
-var G__10799 = (n + (1));
-l__$1 = G__10798;
-n = G__10799;
+var G__13885 = cljs.core.rest(l__$1);
+var G__13886 = (n + (1));
+l__$1 = G__13885;
+n = G__13886;
 continue;
 }
 break;
@@ -1600,18 +1600,18 @@ while(true){
 if(cljs.core.empty_QMARK_(l__$1)){
 return index;
 } else {
-var G__10800 = cljs.core.rest(l__$1);
-var G__10801 = (function (){var G__10561 = index;
-var G__10562 = (function (){var G__10563 = clojure.math.combinatorics.factorial(n);
-var G__10564 = clojure.math.combinatorics.list_index(cljs.core.sort.cljs$core$IFn$_invoke$arity$1(l__$1),cljs.core.first(l__$1));
-return (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__10563,G__10564) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,G__10563,G__10564));
+var G__13887 = cljs.core.rest(l__$1);
+var G__13888 = (function (){var G__13383 = index;
+var G__13384 = (function (){var G__13385 = clojure.math.combinatorics.factorial(n);
+var G__13386 = clojure.math.combinatorics.list_index(cljs.core.sort.cljs$core$IFn$_invoke$arity$1(l__$1),cljs.core.first(l__$1));
+return (clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._STAR__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__13385,G__13386) : clojure.math.combinatorics._STAR__SINGLEQUOTE_.call(null,G__13385,G__13386));
 })();
-return (clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__10561,G__10562) : clojure.math.combinatorics._PLUS__SINGLEQUOTE_.call(null,G__10561,G__10562));
+return (clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2 ? clojure.math.combinatorics._PLUS__SINGLEQUOTE_.cljs$core$IFn$_invoke$arity$2(G__13383,G__13384) : clojure.math.combinatorics._PLUS__SINGLEQUOTE_.call(null,G__13383,G__13384));
 })();
-var G__10802 = (n - (1));
-l__$1 = G__10800;
-index = G__10801;
-n = G__10802;
+var G__13889 = (n - (1));
+l__$1 = G__13887;
+index = G__13888;
+n = G__13889;
 continue;
 }
 break;
@@ -1625,28 +1625,28 @@ while(true){
 if(cljs.core.empty_QMARK_(l__$1)){
 return index;
 } else {
-var G__10803 = cljs.core.rest(l__$1);
-var G__10804 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,index,(function (){var iter__5523__auto__ = ((function (l__$1,index,freqs){
-return (function clojure$math$combinatorics$permutation_index_duplicates_$_iter__10570(s__10571){
+var G__13896 = cljs.core.rest(l__$1);
+var G__13897 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics._PLUS__SINGLEQUOTE_,index,(function (){var iter__5523__auto__ = ((function (l__$1,index,freqs){
+return (function clojure$math$combinatorics$permutation_index_duplicates_$_iter__13428(s__13429){
 return (new cljs.core.LazySeq(null,((function (l__$1,index,freqs){
 return (function (){
-var s__10571__$1 = s__10571;
+var s__13429__$1 = s__13429;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10571__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13429__$1);
 if(temp__5804__auto__){
-var s__10571__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10571__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10571__$2);
+var s__13429__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13429__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13429__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10573 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10572 = (0);
+var b__13431 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13430 = (0);
 while(true){
-if((i__10572 < size__5522__auto__)){
-var k = cljs.core._nth(c__5521__auto__,i__10572);
-cljs.core.chunk_append(b__10573,clojure.math.combinatorics.count_permutations_from_frequencies(clojure.math.combinatorics.dec_key(freqs,k)));
+if((i__13430 < size__5522__auto__)){
+var k = cljs.core._nth(c__5521__auto__,i__13430);
+cljs.core.chunk_append(b__13431,clojure.math.combinatorics.count_permutations_from_frequencies(clojure.math.combinatorics.dec_key(freqs,k)));
 
-var G__10806 = (i__10572 + (1));
-i__10572 = G__10806;
+var G__13905 = (i__13430 + (1));
+i__13430 = G__13905;
 continue;
 } else {
 return true;
@@ -1654,13 +1654,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10573),clojure$math$combinatorics$permutation_index_duplicates_$_iter__10570(cljs.core.chunk_rest(s__10571__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13431),clojure$math$combinatorics$permutation_index_duplicates_$_iter__13428(cljs.core.chunk_rest(s__13429__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10573),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13431),null);
 }
 } else {
-var k = cljs.core.first(s__10571__$2);
-return cljs.core.cons(clojure.math.combinatorics.count_permutations_from_frequencies(clojure.math.combinatorics.dec_key(freqs,k)),clojure$math$combinatorics$permutation_index_duplicates_$_iter__10570(cljs.core.rest(s__10571__$2)));
+var k = cljs.core.first(s__13429__$2);
+return cljs.core.cons(clojure.math.combinatorics.count_permutations_from_frequencies(clojure.math.combinatorics.dec_key(freqs,k)),clojure$math$combinatorics$permutation_index_duplicates_$_iter__13428(cljs.core.rest(s__13429__$2)));
 }
 } else {
 return null;
@@ -1672,15 +1672,15 @@ break;
 });})(l__$1,index,freqs))
 ;
 return iter__5523__auto__(cljs.core.take_while.cljs$core$IFn$_invoke$arity$2(((function (l__$1,index,freqs,iter__5523__auto__){
-return (function (p1__10565_SHARP_){
-return (cljs.core.compare(p1__10565_SHARP_,cljs.core.first(l__$1)) < (0));
+return (function (p1__13387_SHARP_){
+return (cljs.core.compare(p1__13387_SHARP_,cljs.core.first(l__$1)) < (0));
 });})(l__$1,index,freqs,iter__5523__auto__))
 ,cljs.core.keys(freqs)));
 })());
-var G__10805 = clojure.math.combinatorics.dec_key(freqs,cljs.core.first(l__$1));
-l__$1 = G__10803;
-index = G__10804;
-freqs = G__10805;
+var G__13898 = clojure.math.combinatorics.dec_key(freqs,cljs.core.first(l__$1));
+l__$1 = G__13896;
+index = G__13897;
+freqs = G__13898;
 continue;
 }
 break;
@@ -1710,28 +1710,28 @@ return (0);
 });
 clojure.math.combinatorics.init = (function clojure$math$combinatorics$init(n,s){
 if(cljs.core.truth_(s)){
-return cljs.core.vec((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$init_$_iter__10574(s__10575){
+return cljs.core.vec((function (){var iter__5523__auto__ = (function clojure$math$combinatorics$init_$_iter__13488(s__13489){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10575__$1 = s__10575;
+var s__13489__$1 = s__13489;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10575__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13489__$1);
 if(temp__5804__auto__){
-var s__10575__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10575__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10575__$2);
+var s__13489__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13489__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13489__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10577 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10576 = (0);
+var b__13491 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13490 = (0);
 while(true){
-if((i__10576 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10576);
-cljs.core.chunk_append(b__10577,(function (){var x__5130__auto__ = (0);
+if((i__13490 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13490);
+cljs.core.chunk_append(b__13491,(function (){var x__5130__auto__ = (0);
 var y__5131__auto__ = (i - ((n - s) - (-1)));
 return ((x__5130__auto__ > y__5131__auto__) ? x__5130__auto__ : y__5131__auto__);
 })());
 
-var G__10807 = (i__10576 + (1));
-i__10576 = G__10807;
+var G__13912 = (i__13490 + (1));
+i__13490 = G__13912;
 continue;
 } else {
 return true;
@@ -1739,16 +1739,16 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10577),clojure$math$combinatorics$init_$_iter__10574(cljs.core.chunk_rest(s__10575__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13491),clojure$math$combinatorics$init_$_iter__13488(cljs.core.chunk_rest(s__13489__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10577),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13491),null);
 }
 } else {
-var i = cljs.core.first(s__10575__$2);
+var i = cljs.core.first(s__13489__$2);
 return cljs.core.cons((function (){var x__5130__auto__ = (0);
 var y__5131__auto__ = (i - ((n - s) - (-1)));
 return ((x__5130__auto__ > y__5131__auto__) ? x__5130__auto__ : y__5131__auto__);
-})(),clojure$math$combinatorics$init_$_iter__10574(cljs.core.rest(s__10575__$2)));
+})(),clojure$math$combinatorics$init_$_iter__13488(cljs.core.rest(s__13489__$2)));
 }
 } else {
 return null;
@@ -1764,8 +1764,8 @@ return cljs.core.vec(cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(n,(0)));
 }
 });
 clojure.math.combinatorics.growth_strings_H = (function clojure$math$combinatorics$growth_strings_H(var_args){
-var G__10579 = arguments.length;
-switch (G__10579) {
+var G__13494 = arguments.length;
+switch (G__13494) {
 case 3:
 return clojure.math.combinatorics.growth_strings_H.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -1819,8 +1819,8 @@ return and__5043__auto__;
 })()){
 return j;
 } else {
-var G__10809 = (j - (1));
-j = G__10809;
+var G__13914 = (j - (1));
+j = G__13914;
 continue;
 }
 break;
@@ -1831,7 +1831,7 @@ return cljs.core.List.EMPTY;
 } else {
 var a__$1 = clojure.math.combinatorics.update(a,j,cljs.core.inc);
 var x = (cljs.core.truth_(s)?(s - ((b.cljs$core$IFn$_invoke$arity$1 ? b.cljs$core$IFn$_invoke$arity$1(j) : b.call(null,j)) + clojure.math.combinatorics.reify_bool(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((a__$1.cljs$core$IFn$_invoke$arity$1 ? a__$1.cljs$core$IFn$_invoke$arity$1(j) : a__$1.call(null,j)),(b.cljs$core$IFn$_invoke$arity$1 ? b.cljs$core$IFn$_invoke$arity$1(j) : b.call(null,j)))))):null);
-var vec__10580 = (function (){var a__$2 = a__$1;
+var vec__13498 = (function (){var a__$2 = a__$1;
 var b__$1 = b;
 var i = (j + (1));
 var current_max = ((b__$1.cljs$core$IFn$_invoke$arity$1 ? b__$1.cljs$core$IFn$_invoke$arity$1(j) : b__$1.call(null,j)) + clojure.math.combinatorics.reify_bool(((b__$1.cljs$core$IFn$_invoke$arity$1 ? b__$1.cljs$core$IFn$_invoke$arity$1(j) : b__$1.call(null,j)) === (a__$2.cljs$core$IFn$_invoke$arity$1 ? a__$2.cljs$core$IFn$_invoke$arity$1(j) : a__$2.call(null,j)))));
@@ -1847,27 +1847,27 @@ return and__5043__auto__;
 }
 })())){
 var new_a_i = ((i - n) + s);
-var G__10810 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(a__$2,i,new_a_i);
-var G__10811 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b__$1,i,current_max);
-var G__10812 = (i + (1));
-var G__10813 = (function (){var x__5130__auto__ = current_max;
+var G__13917 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(a__$2,i,new_a_i);
+var G__13918 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b__$1,i,current_max);
+var G__13919 = (i + (1));
+var G__13920 = (function (){var x__5130__auto__ = current_max;
 var y__5131__auto__ = (new_a_i + (1));
 return ((x__5130__auto__ > y__5131__auto__) ? x__5130__auto__ : y__5131__auto__);
 })();
-a__$2 = G__10810;
-b__$1 = G__10811;
-i = G__10812;
-current_max = G__10813;
+a__$2 = G__13917;
+b__$1 = G__13918;
+i = G__13919;
+current_max = G__13920;
 continue;
 } else {
-var G__10814 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(a__$2,i,(0));
-var G__10815 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b__$1,i,current_max);
-var G__10816 = (i + (1));
-var G__10817 = current_max;
-a__$2 = G__10814;
-b__$1 = G__10815;
-i = G__10816;
-current_max = G__10817;
+var G__13921 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(a__$2,i,(0));
+var G__13922 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(b__$1,i,current_max);
+var G__13923 = (i + (1));
+var G__13924 = current_max;
+a__$2 = G__13921;
+b__$1 = G__13922;
+i = G__13923;
+current_max = G__13924;
 continue;
 
 }
@@ -1875,8 +1875,8 @@ continue;
 break;
 }
 })();
-var a__$2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10580,(0),null);
-var b__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10580,(1),null);
+var a__$2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13498,(0),null);
+var b__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13498,(1),null);
 return clojure.math.combinatorics.growth_strings_H.cljs$core$IFn$_invoke$arity$5(n,a__$2,b__$1,r,s);
 }
 }
@@ -1887,14 +1887,14 @@ return clojure.math.combinatorics.growth_strings_H.cljs$core$IFn$_invoke$arity$5
 
 clojure.math.combinatorics.lex_partitions_H = (function clojure$math$combinatorics$lex_partitions_H(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___10818 = arguments.length;
-var i__5770__auto___10819 = (0);
+var len__5769__auto___13928 = arguments.length;
+var i__5770__auto___13929 = (0);
 while(true){
-if((i__5770__auto___10819 < len__5769__auto___10818)){
-args__5775__auto__.push((arguments[i__5770__auto___10819]));
+if((i__5770__auto___13929 < len__5769__auto___13928)){
+args__5775__auto__.push((arguments[i__5770__auto___13929]));
 
-var G__10820 = (i__5770__auto___10819 + (1));
-i__5770__auto___10819 = G__10820;
+var G__13930 = (i__5770__auto___13929 + (1));
+i__5770__auto___13929 = G__13930;
 continue;
 } else {
 }
@@ -1905,11 +1905,11 @@ var argseq__5776__auto__ = ((((1) < args__5775__auto__.length))?(new cljs.core.I
 return clojure.math.combinatorics.lex_partitions_H.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__5776__auto__);
 });
 
-(clojure.math.combinatorics.lex_partitions_H.cljs$core$IFn$_invoke$arity$variadic = (function (N,p__10585){
-var map__10586 = p__10585;
-var map__10586__$1 = cljs.core.__destructure_map(map__10586);
-var from = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10586__$1,new cljs.core.Keyword(null,"min","min",444991522));
-var to = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10586__$1,new cljs.core.Keyword(null,"max","max",61366548));
+(clojure.math.combinatorics.lex_partitions_H.cljs$core$IFn$_invoke$arity$variadic = (function (N,p__13509){
+var map__13510 = p__13509;
+var map__13510__$1 = cljs.core.__destructure_map(map__13510);
+var from = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13510__$1,new cljs.core.Keyword(null,"min","min",444991522));
+var to = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13510__$1,new cljs.core.Keyword(null,"max","max",61366548));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(N,(0))){
 if(((((function (){var or__5045__auto__ = from;
 if(cljs.core.truth_(or__5045__auto__)){
@@ -1980,26 +1980,26 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(to__$1,(1))){
 return cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$1((new cljs.core.List(null,cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$1((new cljs.core.List(null,cljs.core.range.cljs$core$IFn$_invoke$arity$1(N),null,(1),null))))),null,(1),null)))));
 } else {
 var growth_strings = clojure.math.combinatorics.growth_strings_H.cljs$core$IFn$_invoke$arity$3(N,to__$1,from__$1);
-var iter__5523__auto__ = (function clojure$math$combinatorics$iter__10587(s__10588){
+var iter__5523__auto__ = (function clojure$math$combinatorics$iter__13515(s__13516){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10588__$1 = s__10588;
+var s__13516__$1 = s__13516;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10588__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13516__$1);
 if(temp__5804__auto__){
-var s__10588__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10588__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10588__$2);
+var s__13516__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13516__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13516__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10590 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10589 = (0);
+var b__13518 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13517 = (0);
 while(true){
-if((i__10589 < size__5522__auto__)){
-var growth_string = cljs.core._nth(c__5521__auto__,i__10589);
+if((i__13517 < size__5522__auto__)){
+var growth_string = cljs.core._nth(c__5521__auto__,i__13517);
 var groups = cljs.core.group_by(growth_string,cljs.core.range.cljs$core$IFn$_invoke$arity$1(N));
-cljs.core.chunk_append(b__10590,cljs.core.map.cljs$core$IFn$_invoke$arity$2(groups,cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(groups))));
+cljs.core.chunk_append(b__13518,cljs.core.map.cljs$core$IFn$_invoke$arity$2(groups,cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(groups))));
 
-var G__10821 = (i__10589 + (1));
-i__10589 = G__10821;
+var G__13931 = (i__13517 + (1));
+i__13517 = G__13931;
 continue;
 } else {
 return true;
@@ -2007,14 +2007,14 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10590),clojure$math$combinatorics$iter__10587(cljs.core.chunk_rest(s__10588__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13518),clojure$math$combinatorics$iter__13515(cljs.core.chunk_rest(s__13516__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10590),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13518),null);
 }
 } else {
-var growth_string = cljs.core.first(s__10588__$2);
+var growth_string = cljs.core.first(s__13516__$2);
 var groups = cljs.core.group_by(growth_string,cljs.core.range.cljs$core$IFn$_invoke$arity$1(N));
-return cljs.core.cons(cljs.core.map.cljs$core$IFn$_invoke$arity$2(groups,cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(groups))),clojure$math$combinatorics$iter__10587(cljs.core.rest(s__10588__$2)));
+return cljs.core.cons(cljs.core.map.cljs$core$IFn$_invoke$arity$2(groups,cljs.core.range.cljs$core$IFn$_invoke$arity$1(cljs.core.count(groups))),clojure$math$combinatorics$iter__13515(cljs.core.rest(s__13516__$2)));
 }
 } else {
 return null;
@@ -2035,23 +2035,23 @@ return iter__5523__auto__(growth_strings);
 (clojure.math.combinatorics.lex_partitions_H.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(clojure.math.combinatorics.lex_partitions_H.cljs$lang$applyTo = (function (seq10583){
-var G__10584 = cljs.core.first(seq10583);
-var seq10583__$1 = cljs.core.next(seq10583);
+(clojure.math.combinatorics.lex_partitions_H.cljs$lang$applyTo = (function (seq13505){
+var G__13506 = cljs.core.first(seq13505);
+var seq13505__$1 = cljs.core.next(seq13505);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10584,seq10583__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__13506,seq13505__$1);
 }));
 
 clojure.math.combinatorics.partitions_H = (function clojure$math$combinatorics$partitions_H(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___10822 = arguments.length;
-var i__5770__auto___10823 = (0);
+var len__5769__auto___13932 = arguments.length;
+var i__5770__auto___13933 = (0);
 while(true){
-if((i__5770__auto___10823 < len__5769__auto___10822)){
-args__5775__auto__.push((arguments[i__5770__auto___10823]));
+if((i__5770__auto___13933 < len__5769__auto___13932)){
+args__5775__auto__.push((arguments[i__5770__auto___13933]));
 
-var G__10824 = (i__5770__auto___10823 + (1));
-i__5770__auto___10823 = G__10824;
+var G__13934 = (i__5770__auto___13933 + (1));
+i__5770__auto___13933 = G__13934;
 continue;
 } else {
 }
@@ -2066,46 +2066,46 @@ return clojure.math.combinatorics.partitions_H.cljs$core$IFn$_invoke$arity$varia
 var items__$1 = cljs.core.vec(items);
 var N = cljs.core.count(items__$1);
 var lex = cljs.core.apply.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics.lex_partitions_H,N,args);
-var iter__5523__auto__ = (function clojure$math$combinatorics$iter__10593(s__10594){
+var iter__5523__auto__ = (function clojure$math$combinatorics$iter__13527(s__13528){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10594__$1 = s__10594;
+var s__13528__$1 = s__13528;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10594__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13528__$1);
 if(temp__5804__auto__){
-var s__10594__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10594__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10594__$2);
+var s__13528__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13528__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13528__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10596 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10595 = (0);
+var b__13530 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13529 = (0);
 while(true){
-if((i__10595 < size__5522__auto__)){
-var parts = cljs.core._nth(c__5521__auto__,i__10595);
-cljs.core.chunk_append(b__10596,(function (){var iter__5523__auto__ = ((function (i__10595,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
-return (function clojure$math$combinatorics$iter__10593_$_iter__10597(s__10598){
-return (new cljs.core.LazySeq(null,((function (i__10595,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
+if((i__13529 < size__5522__auto__)){
+var parts = cljs.core._nth(c__5521__auto__,i__13529);
+cljs.core.chunk_append(b__13530,(function (){var iter__5523__auto__ = ((function (i__13529,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
+return (function clojure$math$combinatorics$iter__13527_$_iter__13532(s__13533){
+return (new cljs.core.LazySeq(null,((function (i__13529,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
 return (function (){
-var s__10598__$1 = s__10598;
+var s__13533__$1 = s__13533;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10598__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13533__$1);
 if(temp__5804__auto____$1){
-var s__10598__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10598__$2)){
-var c__5521__auto____$1 = cljs.core.chunk_first(s__10598__$2);
+var s__13533__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13533__$2)){
+var c__5521__auto____$1 = cljs.core.chunk_first(s__13533__$2);
 var size__5522__auto____$1 = cljs.core.count(c__5521__auto____$1);
-var b__10600 = cljs.core.chunk_buffer(size__5522__auto____$1);
-if((function (){var i__10599 = (0);
+var b__13535 = cljs.core.chunk_buffer(size__5522__auto____$1);
+if((function (){var i__13534 = (0);
 while(true){
-if((i__10599 < size__5522__auto____$1)){
-var part = cljs.core._nth(c__5521__auto____$1,i__10599);
-cljs.core.chunk_append(b__10600,cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__10599,i__10595,part,c__5521__auto____$1,size__5522__auto____$1,b__10600,s__10598__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
+if((i__13534 < size__5522__auto____$1)){
+var part = cljs.core._nth(c__5521__auto____$1,i__13534);
+cljs.core.chunk_append(b__13535,cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__13534,i__13529,part,c__5521__auto____$1,size__5522__auto____$1,b__13535,s__13533__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
 return (function (v,o){
 return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(v,(items__$1.cljs$core$IFn$_invoke$arity$1 ? items__$1.cljs$core$IFn$_invoke$arity$1(o) : items__$1.call(null,o)));
-});})(i__10599,i__10595,part,c__5521__auto____$1,size__5522__auto____$1,b__10600,s__10598__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
+});})(i__13534,i__13529,part,c__5521__auto____$1,size__5522__auto____$1,b__13535,s__13533__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
 ,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)));
 
-var G__10827 = (i__10599 + (1));
-i__10599 = G__10827;
+var G__13935 = (i__13534 + (1));
+i__13534 = G__13935;
 continue;
 } else {
 return true;
@@ -2113,32 +2113,32 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10600),clojure$math$combinatorics$iter__10593_$_iter__10597(cljs.core.chunk_rest(s__10598__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13535),clojure$math$combinatorics$iter__13527_$_iter__13532(cljs.core.chunk_rest(s__13533__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10600),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13535),null);
 }
 } else {
-var part = cljs.core.first(s__10598__$2);
-return cljs.core.cons(cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__10595,part,s__10598__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
+var part = cljs.core.first(s__13533__$2);
+return cljs.core.cons(cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__13529,part,s__13533__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
 return (function (v,o){
 return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(v,(items__$1.cljs$core$IFn$_invoke$arity$1 ? items__$1.cljs$core$IFn$_invoke$arity$1(o) : items__$1.call(null,o)));
-});})(i__10595,part,s__10598__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
-,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)),clojure$math$combinatorics$iter__10593_$_iter__10597(cljs.core.rest(s__10598__$2)));
+});})(i__13529,part,s__13533__$2,temp__5804__auto____$1,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
+,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)),clojure$math$combinatorics$iter__13527_$_iter__13532(cljs.core.rest(s__13533__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__10595,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
+});})(i__13529,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
 ,null,null));
-});})(i__10595,parts,c__5521__auto__,size__5522__auto__,b__10596,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
+});})(i__13529,parts,c__5521__auto__,size__5522__auto__,b__13530,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
 ;
 return iter__5523__auto__(parts);
 })());
 
-var G__10828 = (i__10595 + (1));
-i__10595 = G__10828;
+var G__13936 = (i__13529 + (1));
+i__13529 = G__13936;
 continue;
 } else {
 return true;
@@ -2146,36 +2146,36 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10596),clojure$math$combinatorics$iter__10593(cljs.core.chunk_rest(s__10594__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13530),clojure$math$combinatorics$iter__13527(cljs.core.chunk_rest(s__13528__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10596),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13530),null);
 }
 } else {
-var parts = cljs.core.first(s__10594__$2);
-return cljs.core.cons((function (){var iter__5523__auto__ = ((function (parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
-return (function clojure$math$combinatorics$iter__10593_$_iter__10601(s__10602){
+var parts = cljs.core.first(s__13528__$2);
+return cljs.core.cons((function (){var iter__5523__auto__ = ((function (parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
+return (function clojure$math$combinatorics$iter__13527_$_iter__13539(s__13540){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10602__$1 = s__10602;
+var s__13540__$1 = s__13540;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10602__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13540__$1);
 if(temp__5804__auto____$1){
-var s__10602__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10602__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10602__$2);
+var s__13540__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13540__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13540__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10604 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10603 = (0);
+var b__13542 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13541 = (0);
 while(true){
-if((i__10603 < size__5522__auto__)){
-var part = cljs.core._nth(c__5521__auto__,i__10603);
-cljs.core.chunk_append(b__10604,cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__10603,part,c__5521__auto__,size__5522__auto__,b__10604,s__10602__$2,temp__5804__auto____$1,parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
+if((i__13541 < size__5522__auto__)){
+var part = cljs.core._nth(c__5521__auto__,i__13541);
+cljs.core.chunk_append(b__13542,cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (i__13541,part,c__5521__auto__,size__5522__auto__,b__13542,s__13540__$2,temp__5804__auto____$1,parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
 return (function (v,o){
 return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(v,(items__$1.cljs$core$IFn$_invoke$arity$1 ? items__$1.cljs$core$IFn$_invoke$arity$1(o) : items__$1.call(null,o)));
-});})(i__10603,part,c__5521__auto__,size__5522__auto__,b__10604,s__10602__$2,temp__5804__auto____$1,parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
+});})(i__13541,part,c__5521__auto__,size__5522__auto__,b__13542,s__13540__$2,temp__5804__auto____$1,parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
 ,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)));
 
-var G__10831 = (i__10603 + (1));
-i__10603 = G__10831;
+var G__13938 = (i__13541 + (1));
+i__13541 = G__13938;
 continue;
 } else {
 return true;
@@ -2183,17 +2183,17 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10604),clojure$math$combinatorics$iter__10593_$_iter__10601(cljs.core.chunk_rest(s__10602__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13542),clojure$math$combinatorics$iter__13527_$_iter__13539(cljs.core.chunk_rest(s__13540__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10604),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13542),null);
 }
 } else {
-var part = cljs.core.first(s__10602__$2);
-return cljs.core.cons(cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (part,s__10602__$2,temp__5804__auto____$1,parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex){
+var part = cljs.core.first(s__13540__$2);
+return cljs.core.cons(cljs.core.persistent_BANG_(cljs.core.reduce.cljs$core$IFn$_invoke$arity$3(((function (part,s__13540__$2,temp__5804__auto____$1,parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex){
 return (function (v,o){
 return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(v,(items__$1.cljs$core$IFn$_invoke$arity$1 ? items__$1.cljs$core$IFn$_invoke$arity$1(o) : items__$1.call(null,o)));
-});})(part,s__10602__$2,temp__5804__auto____$1,parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
-,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)),clojure$math$combinatorics$iter__10593_$_iter__10601(cljs.core.rest(s__10602__$2)));
+});})(part,s__13540__$2,temp__5804__auto____$1,parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
+,cljs.core.transient$(cljs.core.PersistentVector.EMPTY),part)),clojure$math$combinatorics$iter__13527_$_iter__13539(cljs.core.rest(s__13540__$2)));
 }
 } else {
 return null;
@@ -2201,10 +2201,10 @@ return null;
 break;
 }
 }),null,null));
-});})(parts,s__10594__$2,temp__5804__auto__,items__$1,N,lex))
+});})(parts,s__13528__$2,temp__5804__auto__,items__$1,N,lex))
 ;
 return iter__5523__auto__(parts);
-})(),clojure$math$combinatorics$iter__10593(cljs.core.rest(s__10594__$2)));
+})(),clojure$math$combinatorics$iter__13527(cljs.core.rest(s__13528__$2)));
 }
 } else {
 return null;
@@ -2219,17 +2219,17 @@ return iter__5523__auto__(lex);
 (clojure.math.combinatorics.partitions_H.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(clojure.math.combinatorics.partitions_H.cljs$lang$applyTo = (function (seq10591){
-var G__10592 = cljs.core.first(seq10591);
-var seq10591__$1 = cljs.core.next(seq10591);
+(clojure.math.combinatorics.partitions_H.cljs$lang$applyTo = (function (seq13521){
+var G__13522 = cljs.core.first(seq13521);
+var seq13521__$1 = cljs.core.next(seq13521);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10592,seq10591__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__13522,seq13521__$1);
 }));
 
 
 clojure.math.combinatorics.multiset_partitions_M = (function clojure$math$combinatorics$multiset_partitions_M(var_args){
-var G__10606 = arguments.length;
-switch (G__10606) {
+var G__13551 = arguments.length;
+switch (G__13551) {
 case 3:
 return clojure.math.combinatorics.multiset_partitions_M.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -2251,7 +2251,7 @@ var f = cljs.core.PersistentVector.EMPTY;
 var c = cljs.core.PersistentVector.EMPTY;
 var u = cljs.core.PersistentVector.EMPTY;
 var v = cljs.core.PersistentVector.EMPTY;
-var vec__10607 = (function (){var j = (0);
+var vec__13554 = (function (){var j = (0);
 var c__$1 = c;
 var u__$1 = u;
 var v__$1 = v;
@@ -2259,26 +2259,26 @@ while(true){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(j,m)){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [c__$1,u__$1,v__$1], null);
 } else {
-var G__10837 = (j + (1));
-var G__10838 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(c__$1,j,(j + (1)));
-var G__10839 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(u__$1,j,(function (){var G__10612 = (j + (1));
-return (multiset.cljs$core$IFn$_invoke$arity$1 ? multiset.cljs$core$IFn$_invoke$arity$1(G__10612) : multiset.call(null,G__10612));
+var G__13940 = (j + (1));
+var G__13941 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(c__$1,j,(j + (1)));
+var G__13942 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(u__$1,j,(function (){var G__13559 = (j + (1));
+return (multiset.cljs$core$IFn$_invoke$arity$1 ? multiset.cljs$core$IFn$_invoke$arity$1(G__13559) : multiset.call(null,G__13559));
 })());
-var G__10840 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$1,j,(function (){var G__10613 = (j + (1));
-return (multiset.cljs$core$IFn$_invoke$arity$1 ? multiset.cljs$core$IFn$_invoke$arity$1(G__10613) : multiset.call(null,G__10613));
+var G__13943 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$1,j,(function (){var G__13560 = (j + (1));
+return (multiset.cljs$core$IFn$_invoke$arity$1 ? multiset.cljs$core$IFn$_invoke$arity$1(G__13560) : multiset.call(null,G__13560));
 })());
-j = G__10837;
-c__$1 = G__10838;
-u__$1 = G__10839;
-v__$1 = G__10840;
+j = G__13940;
+c__$1 = G__13941;
+u__$1 = G__13942;
+v__$1 = G__13943;
 continue;
 }
 break;
 }
 })();
-var c__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10607,(0),null);
-var u__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10607,(1),null);
-var v__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10607,(2),null);
+var c__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13554,(0),null);
+var u__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13554,(1),null);
+var v__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13554,(2),null);
 var a = (0);
 var b = m;
 var l = (0);
@@ -2289,7 +2289,7 @@ return clojure.math.combinatorics.multiset_partitions_M.cljs$core$IFn$_invoke$ar
 
 (clojure.math.combinatorics.multiset_partitions_M.cljs$core$IFn$_invoke$arity$11 = (function (n,m,f,c,u,v,a,b,l,r,s){
 while(true){
-var vec__10614 = (function (){var j = a;
+var vec__13563 = (function (){var j = a;
 var k = b;
 var x = false;
 var u__$1 = u;
@@ -2301,18 +2301,18 @@ return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMP
 } else {
 var u__$2 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(u__$1,k,((u__$1.cljs$core$IFn$_invoke$arity$1 ? u__$1.cljs$core$IFn$_invoke$arity$1(j) : u__$1.call(null,j)) - (v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(j) : v__$1.call(null,j))));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((u__$2.cljs$core$IFn$_invoke$arity$1 ? u__$2.cljs$core$IFn$_invoke$arity$1(k) : u__$2.call(null,k)),(0))){
-var G__10841 = (j + (1));
-var G__10842 = k;
-var G__10843 = true;
-var G__10844 = u__$2;
-var G__10845 = v__$1;
-var G__10846 = c__$1;
-j = G__10841;
-k = G__10842;
-x = G__10843;
-u__$1 = G__10844;
-v__$1 = G__10845;
-c__$1 = G__10846;
+var G__13944 = (j + (1));
+var G__13945 = k;
+var G__13946 = true;
+var G__13947 = u__$2;
+var G__13948 = v__$1;
+var G__13949 = c__$1;
+j = G__13944;
+k = G__13945;
+x = G__13946;
+u__$1 = G__13947;
+v__$1 = G__13948;
+c__$1 = G__13949;
 continue;
 } else {
 if(cljs.core.not(x)){
@@ -2324,36 +2324,36 @@ return ((x__5133__auto__ < y__5134__auto__) ? x__5133__auto__ : y__5134__auto__)
 var x__$1 = ((u__$2.cljs$core$IFn$_invoke$arity$1 ? u__$2.cljs$core$IFn$_invoke$arity$1(k) : u__$2.call(null,k)) < (v__$2.cljs$core$IFn$_invoke$arity$1 ? v__$2.cljs$core$IFn$_invoke$arity$1(j) : v__$2.call(null,j)));
 var k__$1 = (k + (1));
 var j__$1 = (j + (1));
-var G__10847 = j__$1;
-var G__10848 = k__$1;
-var G__10849 = x__$1;
-var G__10850 = u__$2;
-var G__10851 = v__$2;
-var G__10852 = c__$2;
-j = G__10847;
-k = G__10848;
-x = G__10849;
-u__$1 = G__10850;
-v__$1 = G__10851;
-c__$1 = G__10852;
+var G__13951 = j__$1;
+var G__13952 = k__$1;
+var G__13953 = x__$1;
+var G__13954 = u__$2;
+var G__13955 = v__$2;
+var G__13956 = c__$2;
+j = G__13951;
+k = G__13952;
+x = G__13953;
+u__$1 = G__13954;
+v__$1 = G__13955;
+c__$1 = G__13956;
 continue;
 } else {
 var c__$2 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(c__$1,k,(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(j) : c__$1.call(null,j)));
 var v__$2 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$1,k,(u__$2.cljs$core$IFn$_invoke$arity$1 ? u__$2.cljs$core$IFn$_invoke$arity$1(k) : u__$2.call(null,k)));
 var k__$1 = (k + (1));
 var j__$1 = (j + (1));
-var G__10853 = j__$1;
-var G__10854 = k__$1;
-var G__10855 = x;
-var G__10856 = u__$2;
-var G__10857 = v__$2;
-var G__10858 = c__$2;
-j = G__10853;
-k = G__10854;
-x = G__10855;
-u__$1 = G__10856;
-v__$1 = G__10857;
-c__$1 = G__10858;
+var G__13957 = j__$1;
+var G__13958 = k__$1;
+var G__13959 = x;
+var G__13960 = u__$2;
+var G__13961 = v__$2;
+var G__13962 = c__$2;
+j = G__13957;
+k = G__13958;
+x = G__13959;
+u__$1 = G__13960;
+v__$1 = G__13961;
+c__$1 = G__13962;
 continue;
 }
 }
@@ -2361,11 +2361,11 @@ continue;
 break;
 }
 })();
-var u__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10614,(0),null);
-var v__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10614,(1),null);
-var c__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10614,(2),null);
-var j = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10614,(3),null);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10614,(4),null);
+var u__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13563,(0),null);
+var v__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13563,(1),null);
+var c__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13563,(2),null);
+var j = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13563,(3),null);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13563,(4),null);
 if(cljs.core.truth_((function (){var and__5043__auto__ = r;
 if(cljs.core.truth_(and__5043__auto__)){
 return (((k > b)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(l,(r - (1)))));
@@ -2389,77 +2389,77 @@ var a__$1 = b;
 var b__$1 = k;
 var l__$1 = (l + (1));
 var f__$1 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(f,(l__$1 + (1)),b__$1);
-var G__10859 = n;
-var G__10860 = m;
-var G__10861 = f__$1;
-var G__10862 = c__$1;
-var G__10863 = u__$1;
-var G__10864 = v__$1;
-var G__10865 = a__$1;
-var G__10866 = b__$1;
-var G__10867 = l__$1;
-var G__10868 = r;
-var G__10869 = s;
-n = G__10859;
-m = G__10860;
-f = G__10861;
-c = G__10862;
-u = G__10863;
-v = G__10864;
-a = G__10865;
-b = G__10866;
-l = G__10867;
-r = G__10868;
-s = G__10869;
+var G__13969 = n;
+var G__13970 = m;
+var G__13971 = f__$1;
+var G__13972 = c__$1;
+var G__13973 = u__$1;
+var G__13974 = v__$1;
+var G__13975 = a__$1;
+var G__13976 = b__$1;
+var G__13977 = l__$1;
+var G__13978 = r;
+var G__13979 = s;
+n = G__13969;
+m = G__13970;
+f = G__13971;
+c = G__13972;
+u = G__13973;
+v = G__13974;
+a = G__13975;
+b = G__13976;
+l = G__13977;
+r = G__13978;
+s = G__13979;
 continue;
 } else {
-var part = (function (){var iter__5523__auto__ = ((function (n,m,f,c,u,v,a,b,l,r,s,vec__10614,u__$1,v__$1,c__$1,j,k){
-return (function clojure$math$combinatorics$iter__10617(s__10618){
-return (new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,vec__10614,u__$1,v__$1,c__$1,j,k){
+var part = (function (){var iter__5523__auto__ = ((function (n,m,f,c,u,v,a,b,l,r,s,vec__13563,u__$1,v__$1,c__$1,j,k){
+return (function clojure$math$combinatorics$iter__13570(s__13571){
+return (new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,vec__13563,u__$1,v__$1,c__$1,j,k){
 return (function (){
-var s__10618__$1 = s__10618;
+var s__13571__$1 = s__13571;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10618__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13571__$1);
 if(temp__5804__auto__){
-var s__10618__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10618__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10618__$2);
+var s__13571__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13571__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13571__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10620 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10619 = (0);
+var b__13573 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13572 = (0);
 while(true){
-if((i__10619 < size__5522__auto__)){
-var y = cljs.core._nth(c__5521__auto__,i__10619);
-cljs.core.chunk_append(b__10620,(function (){var first_col = (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(y) : f.call(null,y));
-var last_col = ((function (){var G__10621 = (y + (1));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10621) : f.call(null,G__10621));
+if((i__13572 < size__5522__auto__)){
+var y = cljs.core._nth(c__5521__auto__,i__13572);
+cljs.core.chunk_append(b__13573,(function (){var first_col = (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(y) : f.call(null,y));
+var last_col = ((function (){var G__13574 = (y + (1));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13574) : f.call(null,G__13574));
 })() - (1));
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = ((function (i__10619,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__10620,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k){
-return (function clojure$math$combinatorics$iter__10617_$_iter__10622(s__10623){
-return (new cljs.core.LazySeq(null,((function (i__10619,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__10620,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k){
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = ((function (i__13572,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__13573,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k){
+return (function clojure$math$combinatorics$iter__13570_$_iter__13576(s__13577){
+return (new cljs.core.LazySeq(null,((function (i__13572,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__13573,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k){
 return (function (){
-var s__10623__$1 = s__10623;
+var s__13577__$1 = s__13577;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10623__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13577__$1);
 if(temp__5804__auto____$1){
-var s__10623__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10623__$2)){
-var c__5521__auto____$1 = cljs.core.chunk_first(s__10623__$2);
+var s__13577__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13577__$2)){
+var c__5521__auto____$1 = cljs.core.chunk_first(s__13577__$2);
 var size__5522__auto____$1 = cljs.core.count(c__5521__auto____$1);
-var b__10625 = cljs.core.chunk_buffer(size__5522__auto____$1);
-if((function (){var i__10624 = (0);
+var b__13579 = cljs.core.chunk_buffer(size__5522__auto____$1);
+if((function (){var i__13578 = (0);
 while(true){
-if((i__10624 < size__5522__auto____$1)){
-var z = cljs.core._nth(c__5521__auto____$1,i__10624);
+if((i__13578 < size__5522__auto____$1)){
+var z = cljs.core._nth(c__5521__auto____$1,i__13578);
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2((v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z)),(0))){
-cljs.core.chunk_append(b__10625,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null));
+cljs.core.chunk_append(b__13579,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null));
 
-var G__10870 = (i__10624 + (1));
-i__10624 = G__10870;
+var G__14018 = (i__13578 + (1));
+i__13578 = G__14018;
 continue;
 } else {
-var G__10871 = (i__10624 + (1));
-i__10624 = G__10871;
+var G__14019 = (i__13578 + (1));
+i__13578 = G__14019;
 continue;
 }
 } else {
@@ -2468,17 +2468,17 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10625),clojure$math$combinatorics$iter__10617_$_iter__10622(cljs.core.chunk_rest(s__10623__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13579),clojure$math$combinatorics$iter__13570_$_iter__13576(cljs.core.chunk_rest(s__13577__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10625),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13579),null);
 }
 } else {
-var z = cljs.core.first(s__10623__$2);
+var z = cljs.core.first(s__13577__$2);
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2((v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z)),(0))){
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null),clojure$math$combinatorics$iter__10617_$_iter__10622(cljs.core.rest(s__10623__$2)));
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null),clojure$math$combinatorics$iter__13570_$_iter__13576(cljs.core.rest(s__13577__$2)));
 } else {
-var G__10872 = cljs.core.rest(s__10623__$2);
-s__10623__$1 = G__10872;
+var G__14020 = cljs.core.rest(s__13577__$2);
+s__13577__$1 = G__14020;
 continue;
 }
 }
@@ -2487,16 +2487,16 @@ return null;
 }
 break;
 }
-});})(i__10619,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__10620,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(i__13572,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__13573,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k))
 ,null,null));
-});})(i__10619,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__10620,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(i__13572,n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,c__5521__auto__,size__5522__auto__,b__13573,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k))
 ;
 return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$2(first_col,(last_col + (1))));
 })());
 })());
 
-var G__10877 = (i__10619 + (1));
-i__10619 = G__10877;
+var G__14021 = (i__13572 + (1));
+i__13572 = G__14021;
 continue;
 } else {
 return true;
@@ -2504,42 +2504,42 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10620),clojure$math$combinatorics$iter__10617(cljs.core.chunk_rest(s__10618__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13573),clojure$math$combinatorics$iter__13570(cljs.core.chunk_rest(s__13571__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10620),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13573),null);
 }
 } else {
-var y = cljs.core.first(s__10618__$2);
+var y = cljs.core.first(s__13571__$2);
 return cljs.core.cons((function (){var first_col = (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(y) : f.call(null,y));
-var last_col = ((function (){var G__10626 = (y + (1));
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__10626) : f.call(null,G__10626));
+var last_col = ((function (){var G__13582 = (y + (1));
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(G__13582) : f.call(null,G__13582));
 })() - (1));
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = ((function (n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k){
-return (function clojure$math$combinatorics$iter__10617_$_iter__10627(s__10628){
-return (new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k){
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = ((function (n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k){
+return (function clojure$math$combinatorics$iter__13570_$_iter__13583(s__13584){
+return (new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k){
 return (function (){
-var s__10628__$1 = s__10628;
+var s__13584__$1 = s__13584;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10628__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13584__$1);
 if(temp__5804__auto____$1){
-var s__10628__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10628__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10628__$2);
+var s__13584__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13584__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13584__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10630 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10629 = (0);
+var b__13586 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13585 = (0);
 while(true){
-if((i__10629 < size__5522__auto__)){
-var z = cljs.core._nth(c__5521__auto__,i__10629);
+if((i__13585 < size__5522__auto__)){
+var z = cljs.core._nth(c__5521__auto__,i__13585);
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2((v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z)),(0))){
-cljs.core.chunk_append(b__10630,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null));
+cljs.core.chunk_append(b__13586,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null));
 
-var G__10878 = (i__10629 + (1));
-i__10629 = G__10878;
+var G__14022 = (i__13585 + (1));
+i__13585 = G__14022;
 continue;
 } else {
-var G__10879 = (i__10629 + (1));
-i__10629 = G__10879;
+var G__14024 = (i__13585 + (1));
+i__13585 = G__14024;
 continue;
 }
 } else {
@@ -2548,17 +2548,17 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10630),clojure$math$combinatorics$iter__10617_$_iter__10627(cljs.core.chunk_rest(s__10628__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13586),clojure$math$combinatorics$iter__13570_$_iter__13583(cljs.core.chunk_rest(s__13584__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10630),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13586),null);
 }
 } else {
-var z = cljs.core.first(s__10628__$2);
+var z = cljs.core.first(s__13584__$2);
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2((v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z)),(0))){
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null),clojure$math$combinatorics$iter__10617_$_iter__10627(cljs.core.rest(s__10628__$2)));
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(c__$1.cljs$core$IFn$_invoke$arity$1 ? c__$1.cljs$core$IFn$_invoke$arity$1(z) : c__$1.call(null,z)),(v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(z) : v__$1.call(null,z))], null),clojure$math$combinatorics$iter__13570_$_iter__13583(cljs.core.rest(s__13584__$2)));
 } else {
-var G__10880 = cljs.core.rest(s__10628__$2);
-s__10628__$1 = G__10880;
+var G__14025 = cljs.core.rest(s__13584__$2);
+s__13584__$1 = G__14025;
 continue;
 }
 }
@@ -2567,29 +2567,29 @@ return null;
 }
 break;
 }
-});})(n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k))
 ,null,null));
-});})(n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__10618__$2,temp__5804__auto__,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(n,m,f,c,u,v,a,b,l,r,s,first_col,last_col,y,s__13571__$2,temp__5804__auto__,vec__13563,u__$1,v__$1,c__$1,j,k))
 ;
 return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$2(first_col,(last_col + (1))));
 })());
-})(),clojure$math$combinatorics$iter__10617(cljs.core.rest(s__10618__$2)));
+})(),clojure$math$combinatorics$iter__13570(cljs.core.rest(s__13571__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(n,m,f,c,u,v,a,b,l,r,s,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(n,m,f,c,u,v,a,b,l,r,s,vec__13563,u__$1,v__$1,c__$1,j,k))
 ,null,null));
-});})(n,m,f,c,u,v,a,b,l,r,s,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(n,m,f,c,u,v,a,b,l,r,s,vec__13563,u__$1,v__$1,c__$1,j,k))
 ;
 return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((l + (1))));
 })();
-return cljs.core.cons(part,(new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,part,vec__10614,u__$1,v__$1,c__$1,j,k){
+return cljs.core.cons(part,(new cljs.core.LazySeq(null,((function (n,m,f,c,u,v,a,b,l,r,s,part,vec__13563,u__$1,v__$1,c__$1,j,k){
 return (function (){
 return (clojure.math.combinatorics.m5.cljs$core$IFn$_invoke$arity$11 ? clojure.math.combinatorics.m5.cljs$core$IFn$_invoke$arity$11(n,m,f,c__$1,u__$1,v__$1,a,b,l,r,s) : clojure.math.combinatorics.m5.call(null,n,m,f,c__$1,u__$1,v__$1,a,b,l,r,s));
-});})(n,m,f,c,u,v,a,b,l,r,s,part,vec__10614,u__$1,v__$1,c__$1,j,k))
+});})(n,m,f,c,u,v,a,b,l,r,s,part,vec__13563,u__$1,v__$1,c__$1,j,k))
 ,null,null)));
 
 }
@@ -2607,8 +2607,8 @@ while(true){
 if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2((v.cljs$core$IFn$_invoke$arity$1 ? v.cljs$core$IFn$_invoke$arity$1(j) : v.call(null,j)),(0))){
 return j;
 } else {
-var G__10881 = (j - (1));
-j = G__10881;
+var G__14028 = (j - (1));
+j = G__14028;
 continue;
 }
 break;
@@ -2627,25 +2627,25 @@ if(((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(j,a)) && (cljs.core._EQ_.cljs$
 return (clojure.math.combinatorics.m6.cljs$core$IFn$_invoke$arity$11 ? clojure.math.combinatorics.m6.cljs$core$IFn$_invoke$arity$11(n,m,f,c,u,v,a,b,l,r,s) : clojure.math.combinatorics.m6.call(null,n,m,f,c,u,v,a,b,l,r,s));
 } else {
 var v__$1 = clojure.math.combinatorics.update(v,j,cljs.core.dec);
-var diff_uv = (cljs.core.truth_(s)?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core._PLUS_,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$m5_$_iter__10631(s__10632){
+var diff_uv = (cljs.core.truth_(s)?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core._PLUS_,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$m5_$_iter__13591(s__13592){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10632__$1 = s__10632;
+var s__13592__$1 = s__13592;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10632__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13592__$1);
 if(temp__5804__auto__){
-var s__10632__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10632__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10632__$2);
+var s__13592__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13592__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13592__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10634 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10633 = (0);
+var b__13594 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13593 = (0);
 while(true){
-if((i__10633 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10633);
-cljs.core.chunk_append(b__10634,((u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(i) : u.call(null,i)) - (v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(i) : v__$1.call(null,i))));
+if((i__13593 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13593);
+cljs.core.chunk_append(b__13594,((u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(i) : u.call(null,i)) - (v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(i) : v__$1.call(null,i))));
 
-var G__10886 = (i__10633 + (1));
-i__10633 = G__10886;
+var G__14032 = (i__13593 + (1));
+i__13593 = G__14032;
 continue;
 } else {
 return true;
@@ -2653,13 +2653,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10634),clojure$math$combinatorics$m5_$_iter__10631(cljs.core.chunk_rest(s__10632__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13594),clojure$math$combinatorics$m5_$_iter__13591(cljs.core.chunk_rest(s__13592__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10634),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13594),null);
 }
 } else {
-var i = cljs.core.first(s__10632__$2);
-return cljs.core.cons(((u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(i) : u.call(null,i)) - (v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(i) : v__$1.call(null,i))),clojure$math$combinatorics$m5_$_iter__10631(cljs.core.rest(s__10632__$2)));
+var i = cljs.core.first(s__13592__$2);
+return cljs.core.cons(((u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(i) : u.call(null,i)) - (v__$1.cljs$core$IFn$_invoke$arity$1 ? v__$1.cljs$core$IFn$_invoke$arity$1(i) : v__$1.call(null,i))),clojure$math$combinatorics$m5_$_iter__13591(cljs.core.rest(s__13592__$2)));
 }
 } else {
 return null;
@@ -2677,10 +2677,10 @@ if(cljs.core.empty_QMARK_(ks)){
 return v__$2;
 } else {
 var k = cljs.core.first(ks);
-var G__10887 = cljs.core.rest(ks);
-var G__10888 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$2,k,(u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(k) : u.call(null,k)));
-ks = G__10887;
-v__$2 = G__10888;
+var G__14042 = cljs.core.rest(ks);
+var G__14043 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$2,k,(u.cljs$core$IFn$_invoke$arity$1 ? u.cljs$core$IFn$_invoke$arity$1(k) : u.call(null,k)));
+ks = G__14042;
+v__$2 = G__14043;
 continue;
 }
 break;
@@ -2697,12 +2697,12 @@ var amount = amount_to_dec;
 while(true){
 var vk = (v__$3.cljs$core$IFn$_invoke$arity$1 ? v__$3.cljs$core$IFn$_invoke$arity$1(k_1) : v__$3.call(null,k_1));
 if((amount > vk)){
-var G__10889 = (k_1 - (1));
-var G__10890 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$3,k_1,(0));
-var G__10891 = (amount - vk);
-k_1 = G__10889;
-v__$3 = G__10890;
-amount = G__10891;
+var G__14060 = (k_1 - (1));
+var G__14061 = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$3,k_1,(0));
+var G__14062 = (amount - vk);
+k_1 = G__14060;
+v__$3 = G__14061;
+amount = G__14062;
 continue;
 } else {
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(v__$3,k_1,(vk - amount));
@@ -2727,14 +2727,14 @@ return clojure.math.combinatorics.m5(n,m,f,c,u,v,a__$1,b__$1,l__$1,r,s);
 });
 clojure.math.combinatorics.partitions_M = (function clojure$math$combinatorics$partitions_M(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___10892 = arguments.length;
-var i__5770__auto___10893 = (0);
+var len__5769__auto___14076 = arguments.length;
+var i__5770__auto___14077 = (0);
 while(true){
-if((i__5770__auto___10893 < len__5769__auto___10892)){
-args__5775__auto__.push((arguments[i__5770__auto___10893]));
+if((i__5770__auto___14077 < len__5769__auto___14076)){
+args__5775__auto__.push((arguments[i__5770__auto___14077]));
 
-var G__10894 = (i__5770__auto___10893 + (1));
-i__5770__auto___10893 = G__10894;
+var G__14082 = (i__5770__auto___14077 + (1));
+i__5770__auto___14077 = G__14082;
 continue;
 } else {
 }
@@ -2745,11 +2745,11 @@ var argseq__5776__auto__ = ((((1) < args__5775__auto__.length))?(new cljs.core.I
 return clojure.math.combinatorics.partitions_M.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__5776__auto__);
 });
 
-(clojure.math.combinatorics.partitions_M.cljs$core$IFn$_invoke$arity$variadic = (function (items,p__10637){
-var map__10638 = p__10637;
-var map__10638__$1 = cljs.core.__destructure_map(map__10638);
-var from = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10638__$1,new cljs.core.Keyword(null,"min","min",444991522));
-var to = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__10638__$1,new cljs.core.Keyword(null,"max","max",61366548));
+(clojure.math.combinatorics.partitions_M.cljs$core$IFn$_invoke$arity$variadic = (function (items,p__13617){
+var map__13618 = p__13617;
+var map__13618__$1 = cljs.core.__destructure_map(map__13618);
+var from = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13618__$1,new cljs.core.Keyword(null,"min","min",444991522));
+var to = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__13618__$1,new cljs.core.Keyword(null,"max","max",61366548));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(items),(0))){
 if(((((function (){var or__5045__auto__ = from;
 if(cljs.core.truth_(or__5045__auto__)){
@@ -2818,28 +2818,28 @@ return cljs.core.List.EMPTY;
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(N,(1))){
 return cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$1((new cljs.core.List(null,cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$1((new cljs.core.List(null,cljs.core.vec(cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.concat.cljs$core$IFn$_invoke$arity$1((new cljs.core.List(null,cljs.core.first(items__$1),null,(1),null)))))),null,(1),null))))),null,(1),null)))));
 } else {
-var start_multiset = cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$iter__10639(s__10640){
+var start_multiset = cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5523__auto__ = (function clojure$math$combinatorics$iter__13647(s__13648){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10640__$1 = s__10640;
+var s__13648__$1 = s__13648;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10640__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13648__$1);
 if(temp__5804__auto__){
-var s__10640__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10640__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10640__$2);
+var s__13648__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13648__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13648__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10642 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10641 = (0);
+var b__13650 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13649 = (0);
 while(true){
-if((i__10641 < size__5522__auto__)){
-var i = cljs.core._nth(c__5521__auto__,i__10641);
+if((i__13649 < size__5522__auto__)){
+var i = cljs.core._nth(c__5521__auto__,i__13649);
 var j = (i + (1));
-cljs.core.chunk_append(b__10642,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [j,(function (){var G__10643 = (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(i) : ditems.call(null,i));
-return (freqs.cljs$core$IFn$_invoke$arity$1 ? freqs.cljs$core$IFn$_invoke$arity$1(G__10643) : freqs.call(null,G__10643));
+cljs.core.chunk_append(b__13650,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [j,(function (){var G__13654 = (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(i) : ditems.call(null,i));
+return (freqs.cljs$core$IFn$_invoke$arity$1 ? freqs.cljs$core$IFn$_invoke$arity$1(G__13654) : freqs.call(null,G__13654));
 })()], null));
 
-var G__10895 = (i__10641 + (1));
-i__10641 = G__10895;
+var G__14099 = (i__13649 + (1));
+i__13649 = G__14099;
 continue;
 } else {
 return true;
@@ -2847,16 +2847,16 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10642),clojure$math$combinatorics$iter__10639(cljs.core.chunk_rest(s__10640__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13650),clojure$math$combinatorics$iter__13647(cljs.core.chunk_rest(s__13648__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10642),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13650),null);
 }
 } else {
-var i = cljs.core.first(s__10640__$2);
+var i = cljs.core.first(s__13648__$2);
 var j = (i + (1));
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [j,(function (){var G__10644 = (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(i) : ditems.call(null,i));
-return (freqs.cljs$core$IFn$_invoke$arity$1 ? freqs.cljs$core$IFn$_invoke$arity$1(G__10644) : freqs.call(null,G__10644));
-})()], null),clojure$math$combinatorics$iter__10639(cljs.core.rest(s__10640__$2)));
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [j,(function (){var G__13658 = (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(i) : ditems.call(null,i));
+return (freqs.cljs$core$IFn$_invoke$arity$1 ? freqs.cljs$core$IFn$_invoke$arity$1(G__13658) : freqs.call(null,G__13658));
+})()], null),clojure$math$combinatorics$iter__13647(cljs.core.rest(s__13648__$2)));
 }
 } else {
 return null;
@@ -2868,51 +2868,51 @@ break;
 return iter__5523__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1(M));
 })());
 var parts = clojure.math.combinatorics.multiset_partitions_M.cljs$core$IFn$_invoke$arity$3(start_multiset,to__$1,from__$1);
-var iter__5523__auto__ = (function clojure$math$combinatorics$iter__10645(s__10646){
+var iter__5523__auto__ = (function clojure$math$combinatorics$iter__13659(s__13660){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10646__$1 = s__10646;
+var s__13660__$1 = s__13660;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__10646__$1);
+var temp__5804__auto__ = cljs.core.seq(s__13660__$1);
 if(temp__5804__auto__){
-var s__10646__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__10646__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10646__$2);
+var s__13660__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__13660__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13660__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10648 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10647 = (0);
+var b__13662 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13661 = (0);
 while(true){
-if((i__10647 < size__5522__auto__)){
-var part = cljs.core._nth(c__5521__auto__,i__10647);
-cljs.core.chunk_append(b__10648,(function (){var iter__5523__auto__ = ((function (i__10647,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function clojure$math$combinatorics$iter__10645_$_iter__10649(s__10650){
-return (new cljs.core.LazySeq(null,((function (i__10647,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
+if((i__13661 < size__5522__auto__)){
+var part = cljs.core._nth(c__5521__auto__,i__13661);
+cljs.core.chunk_append(b__13662,(function (){var iter__5523__auto__ = ((function (i__13661,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function clojure$math$combinatorics$iter__13659_$_iter__13663(s__13664){
+return (new cljs.core.LazySeq(null,((function (i__13661,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
 return (function (){
-var s__10650__$1 = s__10650;
+var s__13664__$1 = s__13664;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10650__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13664__$1);
 if(temp__5804__auto____$1){
-var s__10650__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10650__$2)){
-var c__5521__auto____$1 = cljs.core.chunk_first(s__10650__$2);
+var s__13664__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13664__$2)){
+var c__5521__auto____$1 = cljs.core.chunk_first(s__13664__$2);
 var size__5522__auto____$1 = cljs.core.count(c__5521__auto____$1);
-var b__10652 = cljs.core.chunk_buffer(size__5522__auto____$1);
-if((function (){var i__10651 = (0);
+var b__13666 = cljs.core.chunk_buffer(size__5522__auto____$1);
+if((function (){var i__13665 = (0);
 while(true){
-if((i__10651 < size__5522__auto____$1)){
-var multiset = cljs.core._nth(c__5521__auto____$1,i__10651);
-cljs.core.chunk_append(b__10652,cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__10651,i__10647,multiset,c__5521__auto____$1,size__5522__auto____$1,b__10652,s__10650__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function (p__10653){
-var vec__10654 = p__10653;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10654,(0),null);
-var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10654,(1),null);
-return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__10657 = (index - (1));
-return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__10657) : ditems.call(null,G__10657));
+if((i__13665 < size__5522__auto____$1)){
+var multiset = cljs.core._nth(c__5521__auto____$1,i__13665);
+cljs.core.chunk_append(b__13666,cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__13665,i__13661,multiset,c__5521__auto____$1,size__5522__auto____$1,b__13666,s__13664__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function (p__13667){
+var vec__13668 = p__13667;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13668,(0),null);
+var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13668,(1),null);
+return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__13671 = (index - (1));
+return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__13671) : ditems.call(null,G__13671));
 })());
-});})(i__10651,i__10647,multiset,c__5521__auto____$1,size__5522__auto____$1,b__10652,s__10650__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
+});})(i__13665,i__13661,multiset,c__5521__auto____$1,size__5522__auto____$1,b__13666,s__13664__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
 ,multiset)));
 
-var G__10896 = (i__10651 + (1));
-i__10651 = G__10896;
+var G__14100 = (i__13665 + (1));
+i__13665 = G__14100;
 continue;
 } else {
 return true;
@@ -2920,37 +2920,37 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10652),clojure$math$combinatorics$iter__10645_$_iter__10649(cljs.core.chunk_rest(s__10650__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13666),clojure$math$combinatorics$iter__13659_$_iter__13663(cljs.core.chunk_rest(s__13664__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10652),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13666),null);
 }
 } else {
-var multiset = cljs.core.first(s__10650__$2);
-return cljs.core.cons(cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__10647,multiset,s__10650__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function (p__10658){
-var vec__10659 = p__10658;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10659,(0),null);
-var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10659,(1),null);
-return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__10662 = (index - (1));
-return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__10662) : ditems.call(null,G__10662));
+var multiset = cljs.core.first(s__13664__$2);
+return cljs.core.cons(cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__13661,multiset,s__13664__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function (p__13672){
+var vec__13673 = p__13672;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13673,(0),null);
+var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13673,(1),null);
+return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__13676 = (index - (1));
+return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__13676) : ditems.call(null,G__13676));
 })());
-});})(i__10647,multiset,s__10650__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
-,multiset)),clojure$math$combinatorics$iter__10645_$_iter__10649(cljs.core.rest(s__10650__$2)));
+});})(i__13661,multiset,s__13664__$2,temp__5804__auto____$1,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
+,multiset)),clojure$math$combinatorics$iter__13659_$_iter__13663(cljs.core.rest(s__13664__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__10647,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
+});})(i__13661,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
 ,null,null));
-});})(i__10647,part,c__5521__auto__,size__5522__auto__,b__10648,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
+});})(i__13661,part,c__5521__auto__,size__5522__auto__,b__13662,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
 ;
 return iter__5523__auto__(part);
 })());
 
-var G__10897 = (i__10647 + (1));
-i__10647 = G__10897;
+var G__14101 = (i__13661 + (1));
+i__13661 = G__14101;
 continue;
 } else {
 return true;
@@ -2958,41 +2958,41 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10648),clojure$math$combinatorics$iter__10645(cljs.core.chunk_rest(s__10646__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13662),clojure$math$combinatorics$iter__13659(cljs.core.chunk_rest(s__13660__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10648),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13662),null);
 }
 } else {
-var part = cljs.core.first(s__10646__$2);
-return cljs.core.cons((function (){var iter__5523__auto__ = ((function (part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function clojure$math$combinatorics$iter__10645_$_iter__10663(s__10664){
+var part = cljs.core.first(s__13660__$2);
+return cljs.core.cons((function (){var iter__5523__auto__ = ((function (part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function clojure$math$combinatorics$iter__13659_$_iter__13677(s__13678){
 return (new cljs.core.LazySeq(null,(function (){
-var s__10664__$1 = s__10664;
+var s__13678__$1 = s__13678;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__10664__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__13678__$1);
 if(temp__5804__auto____$1){
-var s__10664__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__10664__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__10664__$2);
+var s__13678__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__13678__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__13678__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__10666 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__10665 = (0);
+var b__13680 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__13679 = (0);
 while(true){
-if((i__10665 < size__5522__auto__)){
-var multiset = cljs.core._nth(c__5521__auto__,i__10665);
-cljs.core.chunk_append(b__10666,cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__10665,multiset,c__5521__auto__,size__5522__auto__,b__10666,s__10664__$2,temp__5804__auto____$1,part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function (p__10667){
-var vec__10668 = p__10667;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10668,(0),null);
-var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10668,(1),null);
-return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__10671 = (index - (1));
-return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__10671) : ditems.call(null,G__10671));
+if((i__13679 < size__5522__auto__)){
+var multiset = cljs.core._nth(c__5521__auto__,i__13679);
+cljs.core.chunk_append(b__13680,cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (i__13679,multiset,c__5521__auto__,size__5522__auto__,b__13680,s__13678__$2,temp__5804__auto____$1,part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function (p__13681){
+var vec__13682 = p__13681;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13682,(0),null);
+var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13682,(1),null);
+return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__13685 = (index - (1));
+return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__13685) : ditems.call(null,G__13685));
 })());
-});})(i__10665,multiset,c__5521__auto__,size__5522__auto__,b__10666,s__10664__$2,temp__5804__auto____$1,part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
+});})(i__13679,multiset,c__5521__auto__,size__5522__auto__,b__13680,s__13678__$2,temp__5804__auto____$1,part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
 ,multiset)));
 
-var G__10898 = (i__10665 + (1));
-i__10665 = G__10898;
+var G__14102 = (i__13679 + (1));
+i__13679 = G__14102;
 continue;
 } else {
 return true;
@@ -3000,22 +3000,22 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__10666),clojure$math$combinatorics$iter__10645_$_iter__10663(cljs.core.chunk_rest(s__10664__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__13680),clojure$math$combinatorics$iter__13659_$_iter__13677(cljs.core.chunk_rest(s__13678__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__10666),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__13680),null);
 }
 } else {
-var multiset = cljs.core.first(s__10664__$2);
-return cljs.core.cons(cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (multiset,s__10664__$2,temp__5804__auto____$1,part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to){
-return (function (p__10672){
-var vec__10673 = p__10672;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10673,(0),null);
-var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__10673,(1),null);
-return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__10676 = (index - (1));
-return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__10676) : ditems.call(null,G__10676));
+var multiset = cljs.core.first(s__13678__$2);
+return cljs.core.cons(cljs.core.vec(clojure.math.combinatorics.mapjoin(((function (multiset,s__13678__$2,temp__5804__auto____$1,part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to){
+return (function (p__13686){
+var vec__13687 = p__13686;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13687,(0),null);
+var numtimes = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__13687,(1),null);
+return cljs.core.repeat.cljs$core$IFn$_invoke$arity$2(numtimes,(function (){var G__13690 = (index - (1));
+return (ditems.cljs$core$IFn$_invoke$arity$1 ? ditems.cljs$core$IFn$_invoke$arity$1(G__13690) : ditems.call(null,G__13690));
 })());
-});})(multiset,s__10664__$2,temp__5804__auto____$1,part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
-,multiset)),clojure$math$combinatorics$iter__10645_$_iter__10663(cljs.core.rest(s__10664__$2)));
+});})(multiset,s__13678__$2,temp__5804__auto____$1,part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
+,multiset)),clojure$math$combinatorics$iter__13659_$_iter__13677(cljs.core.rest(s__13678__$2)));
 }
 } else {
 return null;
@@ -3023,10 +3023,10 @@ return null;
 break;
 }
 }),null,null));
-});})(part,s__10646__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__10638,map__10638__$1,from,to))
+});})(part,s__13660__$2,temp__5804__auto__,start_multiset,parts,items__$1,ditems,freqs,N,M,from__$1,to__$1,map__13618,map__13618__$1,from,to))
 ;
 return iter__5523__auto__(part);
-})(),clojure$math$combinatorics$iter__10645(cljs.core.rest(s__10646__$2)));
+})(),clojure$math$combinatorics$iter__13659(cljs.core.rest(s__13660__$2)));
 }
 } else {
 return null;
@@ -3045,11 +3045,11 @@ return iter__5523__auto__(parts);
 (clojure.math.combinatorics.partitions_M.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(clojure.math.combinatorics.partitions_M.cljs$lang$applyTo = (function (seq10635){
-var G__10636 = cljs.core.first(seq10635);
-var seq10635__$1 = cljs.core.next(seq10635);
+(clojure.math.combinatorics.partitions_M.cljs$lang$applyTo = (function (seq13613){
+var G__13614 = cljs.core.first(seq13613);
+var seq13613__$1 = cljs.core.next(seq13613);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10636,seq10635__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__13614,seq13613__$1);
 }));
 
 /**
@@ -3058,14 +3058,14 @@ return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10636,seq10635
  */
 clojure.math.combinatorics.partitions = (function clojure$math$combinatorics$partitions(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___10903 = arguments.length;
-var i__5770__auto___10904 = (0);
+var len__5769__auto___14103 = arguments.length;
+var i__5770__auto___14104 = (0);
 while(true){
-if((i__5770__auto___10904 < len__5769__auto___10903)){
-args__5775__auto__.push((arguments[i__5770__auto___10904]));
+if((i__5770__auto___14104 < len__5769__auto___14103)){
+args__5775__auto__.push((arguments[i__5770__auto___14104]));
 
-var G__10905 = (i__5770__auto___10904 + (1));
-i__5770__auto___10904 = G__10905;
+var G__14105 = (i__5770__auto___14104 + (1));
+i__5770__auto___14104 = G__14105;
 continue;
 } else {
 }
@@ -3092,11 +3092,11 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(clojure.math.combinatorics.
 (clojure.math.combinatorics.partitions.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(clojure.math.combinatorics.partitions.cljs$lang$applyTo = (function (seq10677){
-var G__10678 = cljs.core.first(seq10677);
-var seq10677__$1 = cljs.core.next(seq10677);
+(clojure.math.combinatorics.partitions.cljs$lang$applyTo = (function (seq13691){
+var G__13692 = cljs.core.first(seq13691);
+var seq13691__$1 = cljs.core.next(seq13691);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__10678,seq10677__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__13692,seq13691__$1);
 }));
 
 

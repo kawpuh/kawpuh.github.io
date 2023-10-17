@@ -1,1 +1,0 @@
-{"version":3,"sources":["solitaire/subs.cljs"],"mappings":"","names":[],"sourcesContent":["(ns solitaire.subs\n  (:require\n   [re-frame.core :as re-frame]))\n\n\n"]}

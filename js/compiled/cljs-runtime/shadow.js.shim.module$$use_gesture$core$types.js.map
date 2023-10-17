@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$$use_gesture$core$types.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,+CAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,sDAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,8BAAf,GAAgDC,aAAA,CAAc,yBAAd,CAAhD;AACAC,oDAAqDC,CAAAA,OAArD,GAA+DN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,8BAA9E;;",
-"sources":["shadow.js.shim.module$$use_gesture$core$types.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$$use_gesture$core$types\");\ngoog.provide(\"module$shadow_js_shim_module$$use_gesture$core$types\");\nshadow.js.shim.module$$use_gesture$core$types = shadow$bridge(\"@use-gesture/core/types\");\nmodule$shadow_js_shim_module$$use_gesture$core$types.default = shadow.js.shim.module$$use_gesture$core$types;\n"],
-"names":["goog","provide","shadow","js","shim","module$$use_gesture$core$types","shadow$bridge","module$shadow_js_shim_module$$use_gesture$core$types","default"]
-}

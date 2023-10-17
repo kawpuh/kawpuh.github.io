@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$$react_three$flex.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,yCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,gDAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAf,GAA0CC,aAAA,CAAc,mBAAd,CAA1C;AACAC,8CAA+CC,CAAAA,OAA/C,GAAyDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAxE;;",
-"sources":["shadow.js.shim.module$$react_three$flex.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$$react_three$flex\");\ngoog.provide(\"module$shadow_js_shim_module$$react_three$flex\");\nshadow.js.shim.module$$react_three$flex = shadow$bridge(\"@react-three/flex\");\nmodule$shadow_js_shim_module$$react_three$flex.default = shadow.js.shim.module$$react_three$flex;\n"],
-"names":["goog","provide","shadow","js","shim","module$$react_three$flex","shadow$bridge","module$shadow_js_shim_module$$react_three$flex","default"]
-}

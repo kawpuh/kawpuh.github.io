@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$three.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,6BAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,oCAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,YAAf,GAA8BC,aAAA,CAAc,OAAd,CAA9B;AACAC,kCAAmCC,CAAAA,OAAnC,GAA6CN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,YAA5D;;",
-"sources":["shadow.js.shim.module$three.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$three\");\ngoog.provide(\"module$shadow_js_shim_module$three\");\nshadow.js.shim.module$three = shadow$bridge(\"three\");\nmodule$shadow_js_shim_module$three.default = shadow.js.shim.module$three;\n"],
-"names":["goog","provide","shadow","js","shim","module$three","shadow$bridge","module$shadow_js_shim_module$three","default"]
-}

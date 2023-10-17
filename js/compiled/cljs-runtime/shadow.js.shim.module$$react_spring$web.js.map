@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$$react_spring$web.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,yCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,gDAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAf,GAA0CC,aAAA,CAAc,mBAAd,CAA1C;AACAC,8CAA+CC,CAAAA,OAA/C,GAAyDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAxE;;",
-"sources":["shadow.js.shim.module$$react_spring$web.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$$react_spring$web\");\ngoog.provide(\"module$shadow_js_shim_module$$react_spring$web\");\nshadow.js.shim.module$$react_spring$web = shadow$bridge(\"@react-spring/web\");\nmodule$shadow_js_shim_module$$react_spring$web.default = shadow.js.shim.module$$react_spring$web;\n"],
-"names":["goog","provide","shadow","js","shim","module$$react_spring$web","shadow$bridge","module$shadow_js_shim_module$$react_spring$web","default"]
-}

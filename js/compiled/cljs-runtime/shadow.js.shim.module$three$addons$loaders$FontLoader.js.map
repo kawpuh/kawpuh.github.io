@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"shadow.js.shim.module$three$addons$loaders$FontLoader.js",
-"lineCount":5,
-"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,uDAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,8DAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,sCAAf,GAAwDC,aAAA,CAAc,iCAAd,CAAxD;AACAC,4DAA6DC,CAAAA,OAA7D,GAAuEN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,sCAAtF;;",
-"sources":["shadow.js.shim.module$three$addons$loaders$FontLoader.js"],
-"sourcesContent":["goog.provide(\"shadow.js.shim.module$three$addons$loaders$FontLoader\");\ngoog.provide(\"module$shadow_js_shim_module$three$addons$loaders$FontLoader\");\nshadow.js.shim.module$three$addons$loaders$FontLoader = shadow$bridge(\"three/addons/loaders/FontLoader\");\nmodule$shadow_js_shim_module$three$addons$loaders$FontLoader.default = shadow.js.shim.module$three$addons$loaders$FontLoader;\n"],
-"names":["goog","provide","shadow","js","shim","module$three$addons$loaders$FontLoader","shadow$bridge","module$shadow_js_shim_module$three$addons$loaders$FontLoader","default"]
-}

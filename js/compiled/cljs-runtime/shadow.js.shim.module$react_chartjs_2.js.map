@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$react_chartjs_2.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,uCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,8CAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,sBAAf,GAAwCC,aAAA,CAAc,iBAAd,CAAxC;AACAC,4CAA6CC,CAAAA,OAA7C,GAAuDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,sBAAtE;;",
+"sources":["shadow.js.shim.module$react_chartjs_2.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$react_chartjs_2\");\ngoog.provide(\"module$shadow_js_shim_module$react_chartjs_2\");\nshadow.js.shim.module$react_chartjs_2 = shadow$bridge(\"react-chartjs-2\");\nmodule$shadow_js_shim_module$react_chartjs_2.default = shadow.js.shim.module$react_chartjs_2;\n"],
+"names":["goog","provide","shadow","js","shim","module$react_chartjs_2","shadow$bridge","module$shadow_js_shim_module$react_chartjs_2","default"]
+}

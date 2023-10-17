@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$oz_core$vega_lite.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,yCAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,gDAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAf,GAA0CC,aAAA,CAAc,mBAAd,CAA1C;AACAC,8CAA+CC,CAAAA,OAA/C,GAAyDN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,wBAAxE;;",
+"sources":["shadow.js.shim.module$oz_core$vega_lite.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$oz_core$vega_lite\");\ngoog.provide(\"module$shadow_js_shim_module$oz_core$vega_lite\");\nshadow.js.shim.module$oz_core$vega_lite = shadow$bridge(\"oz.core/vega-lite\");\nmodule$shadow_js_shim_module$oz_core$vega_lite.default = shadow.js.shim.module$oz_core$vega_lite;\n"],
+"names":["goog","provide","shadow","js","shim","module$oz_core$vega_lite","shadow$bridge","module$shadow_js_shim_module$oz_core$vega_lite","default"]
+}

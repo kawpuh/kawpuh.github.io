@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$victory.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,+BAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,sCAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,cAAf,GAAgCC,aAAA,CAAc,SAAd,CAAhC;AACAC,oCAAqCC,CAAAA,OAArC,GAA+CN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,cAA9D;;",
+"sources":["shadow.js.shim.module$victory.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$victory\");\ngoog.provide(\"module$shadow_js_shim_module$victory\");\nshadow.js.shim.module$victory = shadow$bridge(\"victory\");\nmodule$shadow_js_shim_module$victory.default = shadow.js.shim.module$victory;\n"],
+"names":["goog","provide","shadow","js","shim","module$victory","shadow$bridge","module$shadow_js_shim_module$victory","default"]
+}

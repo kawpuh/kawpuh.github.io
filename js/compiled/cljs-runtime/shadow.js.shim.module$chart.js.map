@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"shadow.js.shim.module$chart.js",
+"lineCount":5,
+"mappings":"AAAAA,IAAKC,CAAAA,OAAL,CAAa,6BAAb,CAAA;AACAD,IAAKC,CAAAA,OAAL,CAAa,oCAAb,CAAA;AACAC,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,YAAf,GAA8BC,aAAA,CAAc,UAAd,CAA9B;AACAC,kCAAmCC,CAAAA,OAAnC,GAA6CN,MAAOC,CAAAA,EAAGC,CAAAA,IAAKC,CAAAA,YAA5D;;",
+"sources":["shadow.js.shim.module$chart.js"],
+"sourcesContent":["goog.provide(\"shadow.js.shim.module$chart\");\ngoog.provide(\"module$shadow_js_shim_module$chart\");\nshadow.js.shim.module$chart = shadow$bridge(\"chart.js\");\nmodule$shadow_js_shim_module$chart.default = shadow.js.shim.module$chart;\n"],
+"names":["goog","provide","shadow","js","shim","module$chart","shadow$bridge","module$shadow_js_shim_module$chart","default"]
+}
